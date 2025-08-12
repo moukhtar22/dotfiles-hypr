@@ -1,0 +1,18 @@
+@define-color bg       #191724;
+@define-color bg2      #0d0c15;
+@define-color fg       #e0def4;
+
+@define-color color1   #eb6f92;
+@define-color color2   #31748f;
+@define-color color3   #c4a7e7;
+@define-color color4   #f6c177;
+@define-color color5   #ebbcba;
+@define-color color6   #c4a7e7;
+@define-color color7   #9ccfd8;
+
+@define-color occupied #696197;
+@define-color urgent   #eb6f92;
+@define-color empty    #312d47;
+@define-color visible  #ebbcba;
+@define-color critical #eb6f92;
+@define-color hover    #c4a7e7;

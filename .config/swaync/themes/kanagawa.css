@@ -1,0 +1,10 @@
+:root {
+  --cc-bg: #221f1f;
+  --noti-border-color: #242121;
+  --noti-bg: #181616;
+  --noti-bg-darker: #131111;
+  --noti-bg-hover: #151313;
+  --text-color: #c5c9c5;
+  --text-color-disabled: #a6a69c;
+  --bg-selected: #8ba4b0;
+}

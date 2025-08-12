@@ -1,0 +1,91 @@
+/* Waybar styles */
+button {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: .5s;
+  margin: 0;
+  padding: 0;
+}
+
+window#waybar>box {
+  background: black;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+/* Modules styling */
+#idle_inhibitor,
+#custom-power,
+#workspaces,
+#custom-menu,
+#tray,
+#custom-updates,
+#pulseaudio,
+#network,
+#backlight,
+#language,
+#battery,
+#power-profiles-daemon,
+#clock,
+#custom-notification {
+  margin: 0px 0px;
+  padding: 8px 8px;
+  font-size: 21px;
+  color: white;
+  font-family: 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  background: transparent;
+  font-weight: 500;
+}
+
+/* Font fixes */
+#battery     { font-size: 24px }
+#custom-menu { font-size: 28px }
+#pulseaudio  { font-family: 'IosevkaTerm Nerd Font' }
+
+/* Style fixes */
+#custom-notification { padding-right: 26px }
+#battery             { padding-right: 25px }
+#custom-menu         { padding-right: 25px }
+#network             { padding-right: 10px }
+#custom-updates { padding-right: 4px }
+
+/* Hyprland/workspaces styling */
+#workspaces {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  border-radius: 0px;
+  font-family: 'IosevkaTerm Nerd Font';
+}
+
+#workspaces button {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border-radius: 0px;
+  border: none;
+  color: #808080;
+  min-width: 40px;
+  box-shadow: none;
+  background: transparent;
+  font-size: 21px;
+  transition: none;
+  transition: color .12s ease;
+}
+
+#workspaces button.urgent              { color: #fe8019 }
+#workspaces button.empty               { color: #404040 }
+#workspaces button.visible             { color: white   }
+#workspaces button:hover:not(.visible) { color: #aaa    }
+
+/* Battery states */
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) { color: #cc241d }
+
+#battery.plugged  { color: #eeee90 }
+#battery.charging { color: #90ee90 }
