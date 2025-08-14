@@ -51,3 +51,14 @@ require("lazy").setup({
     },
   },
 })
+
+require('java').setup({
+  spring_boot_tools = {
+    enable = false
+  },
+  java_debug_adapter = {
+    enable = true,
+  }
+})
+
+require('lspconfig').jdtls.setup({})

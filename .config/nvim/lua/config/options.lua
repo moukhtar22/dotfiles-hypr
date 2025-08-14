@@ -1,3 +1,4 @@
+
 vim.opt.number = true
 vim.g.autoformat = false
 vim.g.snacks_animate = false
@@ -13,6 +14,8 @@ vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.wrap = false
+
+vim.lsp.inlay_hint.enable(false)
 
 vim.g.everforest_enable_italic = 1
 vim.g.everforest_transparent_background = 1
