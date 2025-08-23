@@ -4,7 +4,7 @@
 set fish_greeting ""
 
 # Aliases
-alias neofetch fastfetch
+alias neofetch pfetch
 alias ls "lsd -la"
 alias cat "bat"
 alias update "sudo pacman -Syu && yay -Syu && flatpak update -y"
