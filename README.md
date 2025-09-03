@@ -38,7 +38,7 @@ sudo pacman -S xorg xorg-server pipewire pipewire-pulse pipewire-alsa alsa-utils
 
 AUR
 ```
-yay -S rofi-wayland waybar-module-pacman-updates-git brave-bin
+yay -S rofi-wayland waybar-module-pacman-updates-git wlogout brave-bin
 ```
 
 Enable services
@@ -52,7 +52,6 @@ Copy files to .config
 ```
 cp -r dotfiles/.config $HOME/
 cp -r dotfiles/.local $HOME/
-sudo chmod +x dotfiles/rofi-power-menu && sudo cp dotfiles/rofi-power-menu /usr/bin/
 git clone https://github.com/dilanrojas/wallpapers.git $HOME/Pictures/wallpapers
 sudo usermod --shell /usr/bin/fish $USER
 sudo usermod --shell /usr/bin/fish root
@@ -68,20 +67,11 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-# Enabled X11 tap to click and natural scroll
-
-```
-sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo cp dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
-```
-
-# Setup SDDM Theme
-
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
 ```
 
-# Improve font rendering
+# Improve font rendering (optional)
 
 ```
 git clone https://github.com/maximilionus/lucidglyph

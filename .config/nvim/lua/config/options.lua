@@ -16,3 +16,5 @@ vim.opt.tabstop = 2
 vim.opt.wrap = false
 
 vim.lsp.inlay_hint.enable(false)
+
+vim.opt.termguicolors = true

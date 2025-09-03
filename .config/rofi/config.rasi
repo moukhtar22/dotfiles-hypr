@@ -9,12 +9,4 @@ configuration{
     display-drun: "    Apps ";
 }
 
-//@theme "/home/dilan/.local/share/rofi/themes/onedark.rasi"
-
-//@theme "/home/dilan/.local/share/rofi/themes/material.rasi"
-
-//@theme "/home/dilan/.local/share/rofi/themes/gruvbox.rasi"
-
-//@theme "/home/dilan/.local/share/rofi/themes/tokyonight.rasi"
-
-@theme "/home/dilan/.local/share/rofi/themes/custom.rasi"
+@theme "~/.local/share/rofi/themes/custom.rasi"
