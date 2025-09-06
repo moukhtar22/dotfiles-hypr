@@ -15,9 +15,9 @@ window#waybar {
 }
 
 window#waybar>box {
-  background: black;
+  background: #212121;
   margin-bottom: 0px;
-  padding: 0px;
+  padding: 0px 8px;
 }
 
 /* Modules styling */
@@ -35,32 +35,37 @@ window#waybar>box {
 #power-profiles-daemon,
 #clock,
 #custom-notification {
-  margin: 0px 0px;
-  padding: 8px 8px;
-  font-size: 21px;
-  color: white;
-  font-family: 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
-  background: transparent;
-  font-weight: 500;
+  margin: 8px 0px;
+  padding: 5px 20px;
+  border-radius: 12px;
+  font-size: 22px;
+  color: #ebdbb2;
+  font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  background: #191919;
+  font-weight: 600;
 }
+
+/* Colors */
+#pulseaudio     { color: #d65d0e; }
+#backlight      { color: #98971a; }
+#custom-updates { color: #689d6a; }
+#language       { color: #458588; }
+#network        { color: #b16286; }
+#clock          { color: #83a598; }
 
 /* Font fixes */
 #battery     { font-size: 24px }
-#custom-menu { font-size: 28px }
 #pulseaudio  { font-family: 'IosevkaTerm Nerd Font' }
 
 /* Style fixes */
-#custom-notification { padding-right: 26px }
-#battery             { padding-right: 25px }
-#custom-menu         { padding-right: 25px }
-#network             { padding-right: 10px }
-#custom-updates { padding-right: 4px }
+#battery             { padding-right: 28px }
+#network             { padding-right: 15px }
+#custom-updates { padding-right: 15px }
 
 /* Hyprland/workspaces styling */
 #workspaces {
-  margin: 0px 0px;
-  padding: 0px 0px;
-  border-radius: 0px;
+  /* margin: 0px 0px; */
+  padding: 0px 15px;
   font-family: 'IosevkaTerm Nerd Font';
 }
 
@@ -69,23 +74,22 @@ window#waybar>box {
   margin: 0px 0px;
   border-radius: 0px;
   border: none;
-  color: #808080;
-  min-width: 40px;
+  color: rgba(250, 189, 47, .6);
+  min-width: 33px;
   box-shadow: none;
   background: transparent;
-  font-size: 21px;
   transition: none;
   transition: color .12s ease;
 }
 
 #workspaces button.urgent              { color: #fe8019 }
-#workspaces button.empty               { color: #404040 }
-#workspaces button.visible             { color: white   }
-#workspaces button:hover:not(.visible) { color: #aaa    }
+#workspaces button.empty               { color: #585045 }
+#workspaces button.visible             { color: #fb4934 }
+#workspaces button:hover:not(.visible) { color: #cc241d }
 
 /* Battery states */
 #battery.warning:not(.charging),
 #battery.critical:not(.charging) { color: #cc241d }
 
-#battery.plugged  { color: #eeee90 }
-#battery.charging { color: #90ee90 }
+#battery.plugged  { color: #b8bb26; }
+#battery.charging { color: #8ec07c; }

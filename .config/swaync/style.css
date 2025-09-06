@@ -1,12 +1,12 @@
 :root {
-  --cc-bg: #221f1f;
-  --noti-border-color: #242121;
-  --noti-bg: #181616;
-  --noti-bg-darker: #131111;
-  --noti-bg-hover: #151313;
-  --text-color: #c5c9c5;
-  --text-color-disabled: #a6a69c;
-  --bg-selected: #8ba4b0;
+  --cc-bg: #212121;
+  --noti-border-color: #191919;
+  --noti-bg: #191919;
+  --noti-bg-darker: #202020;
+  --noti-bg-hover: #222222;
+  --text-color: #ebdbb2;
+  --text-color-disabled: #928374;
+  --bg-selected: #cc241d;
 
   --noti-close-bg: rgba(255, 255, 255, 0.1);
   --noti-close-bg-hover: rgba(255, 255, 255, 0.15);
@@ -53,7 +53,7 @@
 
 .notification-row .notification-background .notification {
   /* The actual notification */
-  border-radius: 0px;
+  border-radius: 10px;
   border: 2px solid var(--noti-border-color);
   padding: 0;
   transition: background 0.15s ease-in-out;
@@ -82,7 +82,7 @@
   border: none;
   color: var(--text-color);
   transition: background 0.15s ease-in-out;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:hover {
@@ -98,7 +98,7 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content {
   background: transparent;
-  border-radius: 0px;
+  border-radius: 10px;
   padding: 4px 8px;
 }
 
@@ -106,7 +106,7 @@
   /* Notification Primary Image */
   -gtk-icon-filter: none;
   -gtk-icon-size: var(--notification-icon-size);
-  border-radius: 0px;
+  border-radius: 10px;
   /* Size in px */
   margin: 4px;
 }
@@ -179,14 +179,14 @@
   color: var(--text-color);
   caret-color: var(--text-color);
   border: 1px solid var(--noti-border-color);
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
   background: var(--noti-bg);
   border: 1px solid var(--noti-border-color);
-  border-radius: 0px;
+  border-radius: 10px;
   color: var(--text-color);
 }
 
@@ -215,7 +215,7 @@
 }
 
 .notification-row .notification-background .notification .notification-action>button {
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .notification-group {
@@ -300,7 +300,7 @@
   /* The Control Center which contains the old notifications + widgets */
   background: var(--cc-bg);
   color: var(--text-color);
-  border-radius: 0px;
+  border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 15px 13px rgba(10, 10, 10, .7)
 }
@@ -353,7 +353,7 @@
 
 .widget-title>button {
   margin: 0px;
-  border-radius: 0px;
+  border-radius: 10px;
   font-size: .9rem;
   padding: .5rem 1rem;
 }
