@@ -33,12 +33,12 @@
 
 PACMAN
 ```
-sudo pacman -S xorg xorg-server pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprlock hypridle hyprpaper swayosd qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty evince waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs xdg-desktop-portal-gtk glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject power-profiles-daemon nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator snapshot mlocate --noconfirm
+sudo pacman -S xorg xorg-server pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprlock hypridle hyprpaper qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty evince waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs xdg-desktop-portal-gtk glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject power-profiles-daemon nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
 ```
 
 AUR
 ```
-yay -S rofi-wayland waybar-module-pacman-updates-git wlogout brave-bin
+yay -S rofi-wayland waybar-module-pacman-updates-git wlogout brave-bin pfetch
 ```
 
 Enable services
@@ -63,6 +63,8 @@ sudo updatedb
 ```
 sudo mkdir -p /etc/udev/rules.d/
 sudo cp dotfiles/99-powerprofile.rules /etc/udev/rules.d/
+chmod +x dotfiles/set_power_profile_at_boot.sh
+sudo cp dotfiles/set_power_profile_at_boot.sh
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```

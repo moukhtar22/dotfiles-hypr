@@ -5,7 +5,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 [window]
 dynamic_padding = false
 decorations = "full"
-title = "Alacritty@CachyOS"
+title = "Alacritty@ArchLinux"
 opacity = 1
 decorations_theme_variant = "Dark"
 
@@ -33,30 +33,30 @@ draw_bold_text_with_bright_colors = true
 
 # Default colors
 [colors.primary]
-background = '#001a1d'
-foreground = '#839496'
+background = '#000000'
+foreground = '#ffffff'
 
 # Normal colors
 [colors.normal]
-black   = '#073642'
-red     = '#dc322f'
-green   = '#859900'
-yellow  = '#b58900'
-blue    = '#268bd2'
-magenta = '#d33682'
-cyan    = '#2aa198'
-white   = '#eee8d5'
+black   = '#000000'
+red     = '#ff5f56'
+green   = '#27c93f'
+yellow  = '#ffbd2e'
+blue    = '#1e90ff'
+magenta = '#ff6ac1'
+cyan    = '#2be4dc'
+white   = '#d0d0d0'
 
 # Bright colors
 [colors.bright]
-black   = '#4c4c4c'
-red     = '#cb4b16'
-green   = '#586e75'
-yellow  = '#657b83'
-blue    = '#839496'
-magenta = '#6c71c4'
-cyan    = '#93a1a1'
-white   = '#fdf6e3'
+black   = '#2e2e2e'
+red     = '#ff5f56'
+green   = '#27c93f'
+yellow  = '#ffbd2e'
+blue    = '#1e90ff'
+magenta = '#ff6ac1'
+cyan    = '#2be4dc'
+white   = '#ffffff'
 
 [font]
 size = 18
