@@ -33,7 +33,7 @@
 
 PACMAN
 ```
-sudo pacman -S xorg xorg-server pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprlock hypridle hyprpaper qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty evince waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs xdg-desktop-portal-gtk glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject power-profiles-daemon nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
+sudo pacman -S xorg xorg-server xorg-drivers pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty evince waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs xdg-desktop-portal-gtk glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject power-profiles-daemon nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
 ```
 
 AUR
