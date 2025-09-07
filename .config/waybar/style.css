@@ -15,57 +15,40 @@ window#waybar {
 }
 
 window#waybar>box {
-  background: #212121;
+  background: #000000;
   margin-bottom: 0px;
-  padding: 0px 8px;
+  padding: 0px 0px;
 }
 
 /* Modules styling */
-#idle_inhibitor,
-#custom-power,
 #workspaces,
-#custom-menu,
 #tray,
 #custom-updates,
-#pulseaudio,
-#network,
-#backlight,
 #language,
 #battery,
-#power-profiles-daemon,
-#clock,
-#custom-notification {
-  margin: 8px 0px;
-  padding: 5px 20px;
+#clock {
+  margin: 0px 0px;
+  padding: 9px 0px;
   border-radius: 12px;
   font-size: 22px;
-  color: #ebdbb2;
-  font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
-  background: #191919;
-  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  background: #000000;
+  font-weight: 500;
 }
 
-/* Colors */
-#pulseaudio     { color: #d65d0e; }
-#backlight      { color: #98971a; }
-#custom-updates { color: #689d6a; }
-#language       { color: #458588; }
-#network        { color: #b16286; }
-#clock          { color: #83a598; }
-
 /* Font fixes */
-#battery     { font-size: 24px }
-#pulseaudio  { font-family: 'IosevkaTerm Nerd Font' }
+#battery        { font-size: 24px }
+#custom-updates { font-family: 'IosevkaTerm Nerd Font' }
 
 /* Style fixes */
-#battery             { padding-right: 28px }
-#network             { padding-right: 15px }
-#custom-updates { padding-right: 15px }
+#battery        { padding-right: 35px }
+#custom-updates { margin-right: 15px }
+#tray           { margin-right: 15px }
 
 /* Hyprland/workspaces styling */
 #workspaces {
-  /* margin: 0px 0px; */
-  padding: 0px 15px;
+  padding: 0px 5px;
   font-family: 'IosevkaTerm Nerd Font';
 }
 
@@ -74,22 +57,21 @@ window#waybar>box {
   margin: 0px 0px;
   border-radius: 0px;
   border: none;
-  color: rgba(250, 189, 47, .6);
-  min-width: 33px;
+  color: #808080;
+  min-width: 40px;
   box-shadow: none;
   background: transparent;
   transition: none;
-  transition: color .12s ease;
 }
 
-#workspaces button.urgent              { color: #fe8019 }
-#workspaces button.empty               { color: #585045 }
-#workspaces button.visible             { color: #fb4934 }
-#workspaces button:hover:not(.visible) { color: #cc241d }
+#workspaces button.urgent              { color: #ff5050 }
+#workspaces button.empty               { color: #404040 }
+#workspaces button.visible             { color: #ffffff }
+#workspaces button:hover:not(.visible) { color: #aaaaaa }
 
 /* Battery states */
 #battery.warning:not(.charging),
-#battery.critical:not(.charging) { color: #cc241d }
+#battery.critical:not(.charging) { color: #ff5050 }
 
-#battery.plugged  { color: #b8bb26; }
-#battery.charging { color: #8ec07c; }
+#battery.plugged  { color: #ffcc15; }
+#battery.charging { color: #80ff80; }

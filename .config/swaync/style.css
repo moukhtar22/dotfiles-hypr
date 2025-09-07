@@ -1,12 +1,12 @@
 :root {
-  --cc-bg: #212121;
+  --cc-bg: #242424;
   --noti-border-color: #191919;
   --noti-bg: #191919;
   --noti-bg-darker: #202020;
   --noti-bg-hover: #222222;
-  --text-color: #ebdbb2;
+  --text-color: #ffffff;
   --text-color-disabled: #928374;
-  --bg-selected: #cc241d;
+  --bg-selected: #7070ff;
 
   --noti-close-bg: rgba(255, 255, 255, 0.1);
   --noti-close-bg-hover: rgba(255, 255, 255, 0.15);
