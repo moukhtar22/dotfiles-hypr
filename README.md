@@ -1,3 +1,6 @@
+# See how it looks
+<img width="1920" height="1080" alt="screenshot-2025-09-20-17:05:07" src="https://github.com/user-attachments/assets/81a1808c-4b78-4d5b-9b8e-891ed388e200" />
+
 # Themes
 
 - SDDM: [SDDM Astronaut Theme](https://github.com/Keyitdev/sddm-astronaut-theme)
