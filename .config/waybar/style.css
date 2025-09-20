@@ -16,8 +16,10 @@ window#waybar {
 
 window#waybar>box {
   background: #000000;
+  margin: 8px;
   margin-bottom: 0px;
   padding: 0px 0px;
+  border-radius: 20px
 }
 
 /* Modules styling */
@@ -25,31 +27,36 @@ window#waybar>box {
 #tray,
 #custom-updates,
 #language,
+#pulseaudio,
 #battery,
+#network,
 #clock {
   margin: 0px 0px;
   padding: 9px 0px;
   border-radius: 12px;
   font-size: 22px;
   color: #ffffff;
-  font-family: 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   background: #000000;
   font-weight: 500;
 }
 
 /* Font fixes */
 #battery        { font-size: 24px }
-#custom-updates { font-family: 'IosevkaTerm Nerd Font' }
+#tray,
+#clock { font-family: 'Adwaita Sans' }
 
 /* Style fixes */
 #battery        { padding-right: 35px }
-#custom-updates { margin-right: 15px }
-#tray           { margin-right: 15px }
+#custom-updates { margin-right: 15px  }
+#tray           { margin-right: 15px  }
+#pulseaudio     { margin-right: 10px  }
+#network        { margin-right: 12px  }
+#language       { margin-right: 12px  }
 
 /* Hyprland/workspaces styling */
 #workspaces {
   padding: 0px 5px;
-  font-family: 'IosevkaTerm Nerd Font';
 }
 
 #workspaces button {

@@ -11,6 +11,9 @@
     "modules-right": [
         "tray",
         "custom/updates",
+        "hyprland/language",
+        "network",
+        "pulseaudio",
         "battery"
     ],
     // Modules configuration
@@ -21,8 +24,8 @@
             "1": "",
             "2": "󰈹",
             "3": "",
-            "4": "󰈙",
-            "5": "󰝚",
+            "4": "",
+            "5": "󰎆",
             "6": "",
             "7": "",
             "8": "",
@@ -137,10 +140,10 @@
     },
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{icon}  {volume}%",
-        "format-muted": "{icon}  0%",
-        "format-bluetooth": "{icon}",
-        "format-bluetooth-muted": "{icon} 0%",
+        "format": "{icon} ",
+        "format-muted": "{icon} ",
+        "format-bluetooth": "{icon} ",
+        "format-bluetooth-muted": "{icon} ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",

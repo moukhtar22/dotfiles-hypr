@@ -1,0 +1,11 @@
+[Unit]
+Description=Set power profile based on AC or battery
+After=multi-user.target
+ConditionPathExists=/usr/local/bin/set-power-profile.sh
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set-power-profile.sh
+
+[Install]
+WantedBy=multi-user.target

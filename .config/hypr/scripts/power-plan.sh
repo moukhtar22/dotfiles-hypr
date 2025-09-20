@@ -1,5 +1,5 @@
 if [ "$(cat /sys/class/power_supply/AC/online)" -eq 1 ]; then
-  powerprofilesctl set performance
+  tuned-adm profile latency-performance
 else
-  powerprofilesctl set balanced
+  tuned-adm profile balanced
 fi
