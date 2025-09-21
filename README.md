@@ -46,7 +46,7 @@ yay -S rofi-wayland waybar-module-pacman-updates-git wlogout brave-bin pfetch on
 
 Enable services
 ```
-sudo systemctl enable power-profiles-daemon sddm bluetooth cups throttled thermald tuned
+sudo systemctl enable sddm bluetooth cups throttled thermald tuned
 ```
 
 # Setup dotfiles
@@ -66,7 +66,7 @@ sudo updatedb
 
 ```
 sudo mkdir -p /etc/udev/rules.d/
-sudo cp dotfiles/99-power-profiles.rules /etc/udev/rules.d/
+sudo cp dotfiles/99-tuned-ac.rules /etc/udev/rules.d/
 chmod +x dotfiles/set_power-profile.sh
 sudo cp dotfiles/set-power-profile.sh /usr/local/bin/
 sudo cp dotfiles/set-power-profile.service /etc/systemd/system/
