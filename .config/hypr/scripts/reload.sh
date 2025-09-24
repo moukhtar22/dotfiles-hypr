@@ -1,7 +1,8 @@
 #!/bin/sh
 hyprctl reload
-pkill waybar
-waybar &
+
+systemctl stop --user waybar
+systemctl start --user waybar
 
 pkill hyprpaper
 hyprpaper &

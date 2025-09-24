@@ -1,4 +1,6 @@
-/* Waybar styles */
+/* ==============================
+   === Waybar modules styling ===
+   ============================== */
 button {
   border-radius: 0;
   box-shadow: none;
@@ -15,7 +17,6 @@ window#waybar {
 }
 
 window#waybar>box {
-  background: #000000;
   margin: 8px;
   margin-bottom: 0px;
   padding: 0px 0px;
@@ -23,48 +24,52 @@ window#waybar>box {
 }
 
 /* Modules styling */
-#workspaces,
-#tray,
-#custom-updates,
-#language,
 #pulseaudio,
-#battery,
+#backlight,
+#idle_inhibitor,
+#custom-updates,
+#tray,
+#workspaces,
+#language,
 #network,
+#battery,
 #clock {
   margin: 0px 0px;
-  padding: 9px 0px;
+  padding: 5px 20px;
   border-radius: 12px;
   font-size: 22px;
   color: #ffffff;
   font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
-  background: #000000;
-  font-weight: 500;
+  background: rgba(0, 0, 0, .7);
+  font-weight: 400;
 }
 
 /* Font fixes */
-#battery        { font-size: 24px }
+#battery {
+  font-size: 24px
+}
+
 #tray,
-#clock { font-family: 'Adwaita Sans' }
+#clock {
+  font-family: 'Liberation Sans'
+}
 
 /* Style fixes */
-#battery        { padding-right: 35px }
-#custom-updates { margin-right: 15px  }
-#tray           { margin-right: 15px  }
-#pulseaudio     { margin-right: 10px  }
-#network        { margin-right: 12px  }
-#language       { margin-right: 12px  }
+#battery { padding-right: 28px; padding-bottom: 6px }
+#idle_inhibitor { padding-right: 28px }
 
 /* Hyprland/workspaces styling */
 #workspaces {
   padding: 0px 5px;
+  font-family: 'Liberation Sans';
 }
 
 #workspaces button {
   padding: 0px 0px;
-  margin: 0px 0px;
-  border-radius: 0px;
+  margin: 5px 0px;
+  border-radius: 9px;
   border: none;
-  color: #808080;
+  color: #cccccc;
   min-width: 40px;
   box-shadow: none;
   background: transparent;
@@ -72,8 +77,8 @@ window#waybar>box {
 }
 
 #workspaces button.urgent              { color: #ff5050 }
-#workspaces button.empty               { color: #404040 }
-#workspaces button.visible             { color: #ffffff }
+#workspaces button.empty               { color: #606060 }
+#workspaces button.visible             { color: #ffffff; background: rgba(255, 255, 255, .15); }
 #workspaces button:hover:not(.visible) { color: #aaaaaa }
 
 /* Battery states */

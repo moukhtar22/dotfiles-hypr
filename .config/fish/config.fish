@@ -7,10 +7,9 @@ set fish_greeting ""
 alias neofetch pfetch
 alias ls "lsd -la"
 alias cat "bat"
-alias update "sudo pacman -Syu && yay -Syu && flatpak update -y"
+alias update "sudo pacman -Syu && yay -Syu"
 alias n nvim
 alias img "kitty +kitten icat"
-alias brave "com.brave.Browser"
 alias cl clear
 
 alias mount "udisksctl mount -b"
