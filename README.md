@@ -1,5 +1,5 @@
 # See how it looks
-<img width="1920" height="1080" alt="screenshot-2025-09-20-17:05:07" src="https://github.com/user-attachments/assets/81a1808c-4b78-4d5b-9b8e-891ed388e200" />
+<img width="1920" height="1080" alt="screenshot-2025-09-23-19:09:08" src="https://github.com/user-attachments/assets/b4fa90ae-aba9-4039-a616-3640c3cb2404" />
 
 # Themes
 
