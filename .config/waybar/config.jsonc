@@ -3,7 +3,7 @@
 // =============================
 {
     "layer": "top",
-    "spacing": 4,
+    "spacing": 5,
     "modules-left": [
       "pulseaudio",
       "backlight",
@@ -18,7 +18,8 @@
         "hyprland/language",
         "network",
         "battery",
-        "clock"
+        "clock",
+        "custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -144,8 +145,8 @@
     },
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{icon} {volume}%",
-        "format-muted": "{icon} 0%",
+        "format": "{icon}  {volume}%",
+        "format-muted": "  0%",
         "format-bluetooth": "{icon} {volume}%",
         "format-bluetooth-muted": "{icon} 0%",
         "format-icons": {
@@ -158,5 +159,9 @@
         "on-click": "pamixer --toggle-mute",
         "tooltip": false
     },
+    "custom/power": {
+      "format": "",
+      "on-click": "wlogout"
+    }
   }
 }

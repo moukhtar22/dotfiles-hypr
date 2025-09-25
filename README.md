@@ -36,17 +36,17 @@
 
 PACMAN
 ```
-sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader tuned pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
+sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
 ```
 
 AUR
 ```
-yay -S rofi-wayland waybar-module-pacman-updates-git wlogout brave-bin pfetch onlyoffice-bin epson-inkjet-printer-escpr
+yay -S rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq brave-bin pfetch onlyoffice-bin epson-inkjet-printer-escpr --noconfirm
 ```
 
 Enable services
 ```
-sudo systemctl enable sddm bluetooth cups tuned
+sudo systemctl enable sddm bluetooth cups auto-cpufreq
 ```
 
 # Setup dotfiles
@@ -62,18 +62,6 @@ sudo usermod --shell /usr/bin/fish root
 sudo updatedb
 ```
 
-# Toggle Performance/Balanced power plan accordingly
-
-```
-sudo mkdir -p /etc/udev/rules.d/
-sudo cp dotfiles/99-tuned-ac.rules /etc/udev/rules.d/
-chmod +x dotfiles/set_power-profile.sh
-sudo cp dotfiles/set-power-profile.sh /usr/local/bin/
-sudo cp dotfiles/set-power-profile.service /etc/systemd/system/
-sudo systemctl enable set-power-profile
-sudo udevadm control --reload-rules
-sudo udevadm trigger
-```
 
 # SDDM Theme (I use Japanese Aesthetic)
 ```

@@ -33,14 +33,15 @@ window#waybar>box {
 #language,
 #network,
 #battery,
-#clock {
+#clock,
+#custom-power {
   margin: 0px 0px;
   padding: 5px 20px;
   border-radius: 12px;
   font-size: 22px;
   color: #ffffff;
   font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .75);
   font-weight: 400;
 }
 
@@ -57,6 +58,9 @@ window#waybar>box {
 /* Style fixes */
 #battery { padding-right: 28px; padding-bottom: 6px }
 #idle_inhibitor { padding-right: 28px }
+#network { padding-right: 17px }
+#custom-power { padding-right: 27px }
+#custom-notification { padding-right: 27px }
 
 /* Hyprland/workspaces styling */
 #workspaces {
@@ -70,10 +74,10 @@ window#waybar>box {
   border-radius: 9px;
   border: none;
   color: #cccccc;
-  min-width: 40px;
+  min-width: 50px;
   box-shadow: none;
   background: transparent;
-  transition: none;
+  transition: color .12s ease, background .12s ease;
 }
 
 #workspaces button.urgent              { color: #ff5050 }

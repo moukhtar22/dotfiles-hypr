@@ -1,5 +1,0 @@
-# When AC adapter is plugged in, switch to performance profile
-SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", RUN+="/usr/bin/tuned-adm profile latency-performance"
-
-# When running on battery, switch to powersave profile
-SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", RUN+="/usr/bin/tuned-adm profile balanced"
