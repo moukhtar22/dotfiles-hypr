@@ -46,9 +46,7 @@ window#waybar>box {
 }
 
 /* Font fixes */
-#battery {
-  font-size: 24px
-}
+#battery { font-size: 24px }
 
 #tray,
 #clock {
@@ -56,11 +54,22 @@ window#waybar>box {
 }
 
 /* Style fixes */
-#battery { padding-right: 28px; padding-bottom: 6px }
-#idle_inhibitor { padding-right: 28px }
-#network { padding-right: 17px }
-#custom-power { padding-right: 27px }
+#battery             { padding-right: 28px; padding-bottom: 6px }
+#idle_inhibitor      { padding-right: 28px }
+#network             { padding-right: 17px }
+#custom-power        { padding-right: 27px }
 #custom-notification { padding-right: 27px }
+
+/* Colors */
+#pulseaudio     { color: #08d7b1 }
+#backlight      { color: #e7815c }
+#idle_inhibitor { color: #F7C493 }
+#custom-updates { color: #c950bd }
+#language       { color: #29a0db }
+#network        { color: #d4663e }
+#battery        { color: #e7ce82 }
+#clock          { color: #7bc13d }
+#custom-power   { color: #e88e8e }
 
 /* Hyprland/workspaces styling */
 #workspaces {
@@ -73,21 +82,21 @@ window#waybar>box {
   margin: 5px 0px;
   border-radius: 9px;
   border: none;
-  color: #cccccc;
+  color: #b8ad90;
   min-width: 50px;
   box-shadow: none;
   background: transparent;
   transition: color .12s ease, background .12s ease;
 }
 
-#workspaces button.urgent              { color: #ff5050 }
-#workspaces button.empty               { color: #606060 }
-#workspaces button.visible             { color: #ffffff; background: rgba(255, 255, 255, .15); }
+#workspaces button.urgent              { color: #d8854b }
+#workspaces button.empty               { color: #575244 }
+#workspaces button.visible             { color: #d8474a; background: rgba(228, 177, 125, .12); }
 #workspaces button:hover:not(.visible) { color: #aaaaaa }
 
 /* Battery states */
 #battery.warning:not(.charging),
-#battery.critical:not(.charging) { color: #ff5050 }
+#battery.critical:not(.charging) { color: #d8474a }
 
-#battery.plugged  { color: #ffcc15; }
-#battery.charging { color: #80ff80; }
+#battery.plugged  { color: #e7ce82; }
+#battery.charging { color: #7bc13d; }

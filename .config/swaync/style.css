@@ -1,12 +1,12 @@
 :root {
-  --cc-bg: #242424;
-  --noti-border-color: #191919;
-  --noti-bg: #191919;
-  --noti-bg-darker: #202020;
-  --noti-bg-hover: #222222;
-  --text-color: #ffffff;
+  --cc-bg: rgba(12, 12, 12, .96);
+  --noti-border-color: #161616;
+  --noti-bg: #161616;
+  --noti-bg-darker: #191919;
+  --noti-bg-hover: #191919;
+  --text-color: #fdffd8;
   --text-color-disabled: #928374;
-  --bg-selected: #7070ff;
+  --bg-selected: #d8474a;
 
   --noti-close-bg: rgba(255, 255, 255, 0.1);
   --noti-close-bg-hover: rgba(255, 255, 255, 0.15);

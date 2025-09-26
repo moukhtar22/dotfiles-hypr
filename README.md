@@ -5,7 +5,6 @@
 
 - SDDM: [SDDM Astronaut Theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 - Wallpapers: [My walls](https://github.com/dilanrojas/wallpapers.git)
-- Theme switcher: Press SUPER + T for toggling between themes. You can also go to the hypr/autostart.conf and uncomment the script for changing the theme on startup.
 
 > [!NOTE]
 > This configuration has been made for a specific screen DPI. Font size and padding might look big.
@@ -25,7 +24,7 @@
 - File manager: [Nautilus](https://apps.gnome.org/en/Nautilus/)
 - Menu: [Rofi Wayland](https://github.com/in0ni/rofi-wayland)
 - Image viewer: [Loupe](https://apps.gnome.org/en/Loupe/)
-- Web browser: [Brave](https://brave.com/)
+- Web browser: [Firefox](https://www.firefox.com/en-US/)
 - Screenshot: [Grim](https://github.com/emersion/grim) & [Slurp](https://github.com/emersion/slurp)
 - Bluetooth Manager: [Blueberry](https://github.com/linuxmint/blueberry)
 - Video player: [Totem](https://apps.gnome.org/en/Totem/)
@@ -36,12 +35,12 @@
 
 PACMAN
 ```
-sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
+sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm firefox hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile qt6ct qt5ct picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp breeze wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
 ```
 
 AUR
 ```
-yay -S rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq brave-bin pfetch onlyoffice-bin epson-inkjet-printer-escpr --noconfirm
+yay -S rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq pfetch onlyoffice-bin epson-inkjet-printer-escpr yaru-icon-theme --noconfirm
 ```
 
 Enable services
