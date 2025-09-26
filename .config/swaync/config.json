@@ -44,8 +44,8 @@
   },
   "notification-visibility": {
     "example-name": {
-      "state": "muted",
-      "urgency": "Low",
+      "state": "normal",
+      "urgency": "Normal",
       "app-name": "Spotify"
     }
   },

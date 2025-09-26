@@ -92,11 +92,11 @@ window#waybar>box {
 #workspaces button.urgent              { color: #d8854b }
 #workspaces button.empty               { color: #575244 }
 #workspaces button.visible             { color: #d8474a; background: rgba(228, 177, 125, .12); }
-#workspaces button:hover:not(.visible) { color: #aaaaaa }
+#workspaces button:hover:not(.visible) { color: #E4B17D }
 
 /* Battery states */
 #battery.warning:not(.charging),
 #battery.critical:not(.charging) { color: #d8474a }
 
-#battery.plugged  { color: #e7ce82; }
-#battery.charging { color: #7bc13d; }
+/* #battery.plugged  { color: #e7ce82; } */
+/* #battery.charging { color: #7bc13d; } */
