@@ -1,3 +1,8 @@
 return {
-  'marko-cerovac/material.nvim'
+  'marko-cerovac/material.nvim',
+  opts = {
+    disable = {
+      background = true
+    }
+  }
 }

@@ -1,9 +1,9 @@
 * {
-    primary: #d8474a;
+    primary: #689d6a;
     primary-fixed: #e0f8f9;
     primary-fixed-dim: #c8d4d4;
-    on-primary: #0c0c0c00;
-    on-primary-fixed: #101010f3;
+    on-primary: #252525;
+    on-primary-fixed: #181818;
     on-primary-fixed-variant: #3c3c3c;
     primary-container: #3c3c3c;
     on-primary-container: #e0f8f9;
@@ -14,7 +14,7 @@
     on-secondary: #2a2a2a;
     on-secondary-fixed: #161616;
     on-secondary-fixed-variant: #4c4c4c;
-    secondary-container: #E4B17D;
+    secondary-container: #999999;
     on-secondary-container: #e1e1e1;
 
     tertiary: #c8c8c8;

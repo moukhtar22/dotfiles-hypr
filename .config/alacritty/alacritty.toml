@@ -6,7 +6,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = false
 decorations = "full"
 title = "Alacritty@ArchLinux"
-opacity = 0.96
+opacity = 1
 decorations_theme_variant = "Dark"
 
 [window.padding]
@@ -27,7 +27,6 @@ multiplier = 3
 
 [colors]
 draw_bold_text_with_bright_colors = true
-
 
 # Default colors
 [colors.primary]
