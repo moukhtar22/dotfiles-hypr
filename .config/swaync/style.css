@@ -54,6 +54,7 @@
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 0px;
+  margin-right: 9px;
   border: 2px solid var(--noti-border-color);
   padding: 0;
   transition: background 0.15s ease-in-out;
