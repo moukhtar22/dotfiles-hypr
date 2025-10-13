@@ -17,7 +17,7 @@
 - Shell: [Fish](https://fishshell.com/)
 - Prompt: [Starship](https://starship.rs/)
 - Fonts: [IosevkaTerm Nerd](https://www.nerdfonts.com/font-downloads)
-- Terminal: [Kitty](https://github.com/kovidgoyal/kitty)
+- Terminal: [Alacritty](https://alacritty.org/)
 - Greeter: [SDDM](https://github.com/sddm/sddm)
 - Notification manager: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
 - PDF Viewer: [Evince](https://wiki.gnome.org/Apps/Evince)
@@ -35,7 +35,7 @@
 
 PACMAN
 ```
-sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm firefox hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile qt6ct qt5ct picom nitrogen hyprcursor sox playerctl fish starship lsd bat kitty alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp breeze wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
+sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm firefox hyprland hyprpicker hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile qt6ct qt5ct picom nitrogen hyprcursor sox playerctl fish starship lsd bat alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp breeze wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
 ```
 
 AUR
@@ -56,6 +56,7 @@ cp -r dotfiles/.config $HOME/
 cp -r dotfiles/.local $HOME/
 cp dotfiles/.Xresources $HOME/
 git clone https://github.com/dilanrojas/wallpapers.git $HOME/Pictures/wallpapers
+sudo cp dotfiles/auto-cpufreq /etc/
 sudo usermod --shell /usr/bin/fish $USER
 sudo usermod --shell /usr/bin/fish root
 sudo updatedb

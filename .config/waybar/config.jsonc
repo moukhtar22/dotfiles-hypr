@@ -3,43 +3,47 @@
 // =============================
 {
     "layer": "top",
-    "spacing": 5,
+    "spacing": 18,
     "modules-left": [
-      "pulseaudio",
-      "backlight",
+      "hyprland/workspaces",
+      "custom/separator",
       "idle_inhibitor",
       "custom/updates",
-      "tray"
+      "custom/separator",
+      "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/workspaces"
     ],
     "modules-right": [
+        "tray",
         "hyprland/language",
+        "custom/separator",
+        "pulseaudio",
+        "backlight",
+        "custom/separator",
         "network",
         "battery",
-        "clock",
-        "custom/power"
+        "custom/bluetooth",
+        "custom/separator",
+        "clock"
     ],
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": false,
         "format": "{icon}",
         "format-icons": {
-            // "1": "I",
-            // "2": "II",
-            // "3": "III",
-            // "4": "IV",
-            // "5": "V",
-            // "6": "VI",
-            // "7": "VII",
-            // "8": "VIII",
-            // "9": "IX",
-            // "10": "X",
-            "empty": " ",
-		        "default": "",
-            "active": "󰮯"
-      },
+          "default": "",
+          "1": " ",
+          "2": "󰈹",
+          "3": "",
+          "4": "󰈙",
+          "5": " ",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+          // "active": "󱓻"
+       },
        "persistent-workspaces": {
              "*": 5
       },
@@ -159,9 +163,13 @@
         "on-click": "pamixer --toggle-mute",
         "tooltip": false
     },
-    "custom/power": {
-      "format": "",
-      "on-click": "wlogout",
+    "custom/bluetooth": {
+      "format": "󰂯",
+      "on-click": "blueberry",
+      "tooltip": false
+    },
+    "custom/separator": {
+      "format": "|",
       "tooltip": false
     }
   }

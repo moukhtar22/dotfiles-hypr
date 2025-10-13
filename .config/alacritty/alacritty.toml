@@ -6,7 +6,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = false
 decorations = "full"
 title = "Alacritty@ArchLinux"
-opacity = 1
+opacity = 0.96
 decorations_theme_variant = "Dark"
 
 [window.padding]
@@ -28,12 +28,10 @@ multiplier = 3
 [colors]
 draw_bold_text_with_bright_colors = true
 
-# Colors (Solarized Osaka)
-# Source https://github.com/craftzdog/solarized-osaka.nvim
 
 # Default colors
 [colors.primary]
-background = '#212121'
+background = '#222222'
 foreground = '#ebdbb2'
 
 # Normal colors
@@ -59,11 +57,11 @@ cyan    = '#8ec07c'
 white   = '#bdae93'
 
 [font]
-size = 14
+size = 21
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
-style = "Semibold"
+style = "Medium"
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
