@@ -6,7 +6,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = false
 decorations = "full"
 title = "Alacritty@ArchLinux"
-opacity = 1
+opacity = 0.94
 decorations_theme_variant = "Dark"
 
 [window.padding]
@@ -30,30 +30,30 @@ draw_bold_text_with_bright_colors = true
 
 # Default colors
 [colors.primary]
-background = '#222222'
-foreground = '#ebdbb2'
+background = '#000e0f'
+foreground = '#9EACAD'
 
 # Normal colors
 [colors.normal]
-black   = '#665c54'
-red     = '#cc241d'
-green   = '#98971a'
-yellow  = '#d79921'
-blue    = '#458588'
-magenta = '#b16286'
-cyan    = '#689d6a'
-white   = '#a89984'
+black   = '#586E75'
+red     = '#DC322F'
+green   = '#859901'
+yellow  = '#B58900'
+blue    = '#278BD2'
+magenta = '#D33682'
+cyan    = '#2AA198'
+white   = '#FDF6E3'
 
 # Bright colors
 [colors.bright]
-black   = '#7c6f64'
-red     = '#fb4934'
-green   = '#b8bb26'
-yellow  = '#fabd2f'
-blue    = '#83a598'
-magenta = '#d3869b'
-cyan    = '#8ec07c'
-white   = '#bdae93'
+black   = '#586E75'
+red     = '#DC322F'
+green   = '#859901'
+yellow  = '#B58900'
+blue    = '#278BD2'
+magenta = '#D33682'
+cyan    = '#2AA198'
+white   = '#FDF6E3'
 
 [font]
 size = 21

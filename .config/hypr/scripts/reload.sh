@@ -9,3 +9,6 @@ hyprpaper &
 
 pkill swaync
 swaync &
+
+pkill swayosd-server
+swayosd-server &
