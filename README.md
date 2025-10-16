@@ -24,7 +24,7 @@
 - File manager: [Nautilus](https://apps.gnome.org/en/Nautilus/)
 - Menu: [Rofi Wayland](https://github.com/in0ni/rofi-wayland)
 - Image viewer: [Loupe](https://apps.gnome.org/en/Loupe/)
-- Web browser: [Firefox](https://www.firefox.com/en-US/)
+- Web browser: [Brave](https://brave.com/)
 - Screenshot: [Grim](https://github.com/emersion/grim) & [Slurp](https://github.com/emersion/slurp)
 - Bluetooth Manager: [Blueberry](https://github.com/linuxmint/blueberry)
 - Video player: [Totem](https://apps.gnome.org/en/Totem/)
@@ -35,17 +35,18 @@
 
 PACMAN
 ```
-sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm firefox hyprland hyprpicker swayosd hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile qt6ct qt5ct picom nitrogen hyprcursor sox playerctl fish starship lsd bat alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp breeze wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate --noconfirm
+sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa vulkan-intel vulkan-icd-loader pipewire pipewire-pulse pipewire-alsa alsa-utils pavucontrol wireplumber sddm uwsm hyprland hyprpicker swayosd hyprland-protocols wlroots0.19 hyprlock hypridle hyprpaper qtile qt6ct qt5ct picom nitrogen hyprcursor sox playerctl fish starship lsd bat alacritty papers waybar nautilus gnome-disk-utility loupe totem grim slurp ttf-liberation ttf-jetbrains-mono ttf-dejavu noto-fonts noto-fonts-emoji adw-gtk-theme nwg-look swaync polkit-gnome cliphist neovim batsignal brightnessctl pamixer ttf-iosevkaterm-nerd xdg-desktop-portal-hyprland xdg-user-dirs glib2 gvfs-mtp breeze wlr-protocols unzip unrar python-gobject nodejs npm ripgrep fd lazygit bluez bluez-utils blueberry cups cups-pdf ttf-jetbrains-mono-nerd ttf-font-awesome otf-font-awesome gnome-text-editor gnome-calendar gnome-clocks kvantum gnome-calculator mlocate throttled --noconfirm
 ```
 
 AUR
 ```
-yay -S rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq pfetch onlyoffice-bin epson-inkjet-printer-escpr yaru-icon-theme --noconfirm
+yay -S brave-bin rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq pfetch onlyoffice-bin epson-inkjet-printer-escpr yaru-icon-theme --noconfirm
 ```
 
 Enable services
 ```
-sudo systemctl enable sddm bluetooth cups auto-cpufreq
+sudo systemctl enable sddm bluetooth cups auto-cpufreq throttled
+systemctl --user enable waybar
 ```
 
 # Setup dotfiles
@@ -56,7 +57,8 @@ cp -r dotfiles/.config $HOME/
 cp -r dotfiles/.local $HOME/
 cp dotfiles/.Xresources $HOME/
 git clone https://github.com/dilanrojas/wallpapers.git $HOME/Pictures/wallpapers
-sudo cp dotfiles/auto-cpufreq /etc/
+sudo cp dotfiles/auto-cpufreq.conf /etc/
+sudo cp dotfiles/throttled.conf /etc/
 sudo usermod --shell /usr/bin/fish $USER
 sudo usermod --shell /usr/bin/fish root
 sudo updatedb
