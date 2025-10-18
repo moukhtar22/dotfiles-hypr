@@ -40,7 +40,7 @@ sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa
 
 AUR
 ```
-yay -S brave-bin rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq pfetch onlyoffice-bin epson-inkjet-printer-escpr yaru-icon-theme --noconfirm
+yay -S brave-bin rofi-wayland waybar-module-pacman-updates-git ttf-adwaita-mono-nerd wlogout auto-cpufreq pfetch onlyoffice-bin epson-inkjet-printer-escpr yaru-icon-theme --noconfirm
 ```
 
 Enable services
