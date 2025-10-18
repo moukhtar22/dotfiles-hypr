@@ -7,7 +7,7 @@ configuration {
 	display-window: "Windows";
 	display-run: "Run";
 	drun-display-format: "{icon} {name}";
-	font: "IosevkaTerm Nerd Font 18";
+	font: "Adwaita Mono Nerd Font 12";
 	show-icons: true;
 	icon-theme: "Colloid";
 }
@@ -18,8 +18,8 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       830px;
-    height:                      635px;
+    width:                       550px;
+    height:                      440px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -27,7 +27,7 @@ window {
     enabled:                     true;
     border:			 2px solid;
     border-color:		 @secondary-container;
-    border-radius:               0px;
+    border-radius:               8px;
     cursor:                      "default";
     background-color:            @on-primary-fixed;
 }
@@ -49,8 +49,8 @@ imagebox {
 }
 
 listbox {
-    spacing:                     20px;
-    padding:                     20px;
+    spacing:                     16px;
+    padding:                     16px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    ["inputbar", "message", "listview", "mode-switcher"];
@@ -62,9 +62,9 @@ dummy {
 
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     15px;
-    border-radius:               0px;
+    spacing:                     7px;
+    padding:                     13px;
+    border-radius:               8px;
     background-color:		 @on-primary;
     text-color:			 @on-surface;
     children:                    [ "textbox-prompt-colon", "entry" ];
@@ -92,10 +92,10 @@ mode-switcher{
     text-color:                  @primary-fixed;
 }
 button {
-    padding:                     15px;
-    border-radius:               0px;
+    padding:                     12px;
+    border-radius:               8px;
     background-color:            @on-primary;
-    text-color:                  inherit;
+    text-color:                  @on-surface;
     cursor:                      pointer;
 }
 button selected {
@@ -123,9 +123,9 @@ listview {
 
 element {
     enabled:                     true;
-    spacing:                     15px;
-    padding:                     15px;
-    border-radius:               0px;
+    spacing:                     12px;
+    padding:                     12px;
+    border-radius:               8px;
     background-color:            transparent;
     text-color:                  @on-surface;
     cursor:                      pointer;
@@ -157,7 +157,7 @@ element selected.active {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        24px;
     cursor:                      inherit;
 }
 element-text {
@@ -172,16 +172,16 @@ message {
     background-color:            transparent;
 }
 textbox {
-    padding:                     15px;
-    border-radius:               10px;
+    padding:                     12px;
+    border-radius:               8px;
     background-color:            @on-primary;
     text-color:                  @on-surface;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
 error-message {
-    padding:                     15px;
-    border-radius:               0px;
+    padding:                     12px;
+    border-radius:               8px;
     background-color:            @on-primary;
     text-color:                  @on-surface;
 }

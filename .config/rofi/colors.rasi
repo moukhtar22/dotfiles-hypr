@@ -1,9 +1,9 @@
 * {
-    primary: #A13D11;
+    primary: #458588;
     primary-fixed: #e0f8f9;
     primary-fixed-dim: #c8d4d4;
-    on-primary: #191919;
-    on-primary-fixed: #111111;
+    on-primary: #303030;
+    on-primary-fixed: #222222;
     on-primary-fixed-variant: #3c3c3c;
     primary-container: #3c3c3c;
     on-primary-container: #e0f8f9;
@@ -32,8 +32,8 @@
     on-error-container: #ffeaea;
 
     surface: #0e0e0e;
-    on-surface: #e4e4e4;
-    on-surface-variant: #c0c0c0;
+    on-surface: #ffffff;
+    on-surface-variant: #ffffff;
     outline: #939393;
     outline-variant: #484848;
     shadow: #000000;

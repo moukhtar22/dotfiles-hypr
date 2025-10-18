@@ -18,8 +18,8 @@ window#waybar {
 
 window#waybar>box {
   margin-bottom: 0px;
-  padding: 0px 15px;
-  background: #000;
+  padding: 0px 10px;
+  background: #121212;
 }
 
 /* Modules styling */
@@ -34,19 +34,18 @@ window#waybar>box {
 #custom-bluetooth,
 #battery {
   margin: 0px 0px;
-  padding: 10px 0px;
+  padding: 5px 0px;
   border-radius: 12px;
-  font-size: 22px;
+  font-size: 17px;
   color: #fff;
   font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   font-weight: 500;
 }
 
 /* Fixes */
-#battery          { font-size: 24px; padding-right: 7px }
+#battery          { font-size: 19px; padding-right: 7px }
 #custom-separator { color: #505050     }
 #custom-bluetooth { padding-right: 4px }
-#window           { font-size: 20px;   }
 #clock            { padding-right: 5px }
 
 #window, #tray, #clock { font-family: 'Liberation Sans' }
@@ -67,7 +66,7 @@ window#waybar>box {
   margin: 0px 0px;
   border: none;
   color: #ccc;
-  min-width: 35px;
+  min-width: 30px;
   box-shadow: none;
   background: transparent;
   transition: color .12s ease, background .12s ease;
