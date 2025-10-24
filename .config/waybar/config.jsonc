@@ -2,158 +2,157 @@
 // === Waybar modules config ===
 // =============================
 {
-    "layer": "bottom",
-    "spacing": 14,
-    "modules-left": [
-      "hyprland/workspaces",
-      "custom/separator",
-      "idle_inhibitor",
-      "custom/updates"
-    ],
-    "modules-center": [
-      "clock"
-    ],
-    "modules-right": [
-      "tray",
-      "hyprland/language",
-      "pulseaudio",
-      "custom/separator",
-      "network",
-      "custom/bluetooth",
-      "battery",
-    ],
-    // Modules configuration
-    "hyprland/workspaces": {
-        "disable-scroll": false,
-        "format": "{icon}",
-        "format-icons": {
-          "default": "",
-          "1": "1",
-          "2": "2",
-          "3": "3",
-          "4": "4",
-          "5": "5",
-          "6": "6",
-          "7": "7",
-          "8": "8",
-          "9": "9",
-          "active": "󱓻"
-       },
-       "persistent-workspaces": {
-             "*": 5
+  "layer": "bottom",
+  "spacing": 14,
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/separator",
+    "idle_inhibitor",
+    "custom/updates"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "hyprland/language",
+    "pulseaudio",
+    "custom/separator",
+    "network",
+    "custom/bluetooth",
+    "battery"
+  ],
+  // Modules configuration
+  "hyprland/workspaces": {
+      "disable-scroll": false,
+      "format": "{icon}",
+      "format-icons": {
+        "default": "",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "active": "󱓻"
+     },
+     "persistent-workspaces": {
+           "*": 5
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+  "hyprland/language": {
+      "format": "{}",
+      "format-en": "US",
+      "format-es": "LA",
+      "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+  },
+  "hyprland/window": {
+      "format": "{}",
+      "separate-outputs": true
+  },
+  "custom/notification": {
+      "tooltip": false,
+      "format": "{icon}",
+      "format-icons": {
+        "notification": "",
+        "none": "",
+        "dnd-notification": "",
+        "dnd-none": "",
+        "inhibited-notification": "",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "",
+        "dnd-inhibited-none": ""
+      },        "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "escape": true,
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw"
+  },
+  "idle_inhibitor": {
+      "format": "{icon} ",
+      "format-icons": {
+          "activated": "",
+          "deactivated": ""
+      }
+  },
+  "tray": {
+      "icon-size": 24,
+      "spacing": 13,
+  },
+  "clock": {
+      "format": "{:%I:%M %p}",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "gnome-clocks",
+      "tooltip": false
+  },
+  "backlight": {
+      "scroll-step": 5,
+      "format": "{icon}  Light: {percent}% ",
+      "format-icons": ["", "", "", "", "", "", "", "", ""],
+      "tooltip": false
+  },
+  "battery": {
+      "states": {
+          "warning": 10,
+          "critical": 4
       },
-      "on-scroll-up": "hyprctl dispatch workspace e-1",
-      "on-scroll-down": "hyprctl dispatch workspace e+1"
-    },
-    "hyprland/language": {
-        "format": "{}",
-        "format-en": "US",
-        "format-es": "LA",
-        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
-    },
-    "hyprland/window": {
-        "format": "{}",
-        "separate-outputs": true
-    },
-    "custom/notification": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-          "notification": "",
-          "none": "",
-          "dnd-notification": "",
-          "dnd-none": "",
-          "inhibited-notification": "",
-          "inhibited-none": "",
-          "dnd-inhibited-notification": "",
-          "dnd-inhibited-none": ""
-        },        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "escape": true,
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw"
-    },
-    "idle_inhibitor": {
-        "format": "{icon} ",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        "icon-size": 24,
-        "spacing": 13,
-    },
-    "clock": {
-        "format": "{:%I:%M %p}",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "gnome-clocks",
-        "tooltip": false
-    },
-    "backlight": {
-        "scroll-step": 5,
-        "format": "{icon}  Light: {percent}% ",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip": false
-    },
-    "battery": {
-        "states": {
-            "warning": 10,
-            "critical": 4
-        },
-        "format": "{icon} ",
-        "format-charging": " {icon} ",
-        "format-plugged": " {icon} ",
-        "format-icons": ["", "", "", "", ""],
-        "interval": 3,
-        "tooltip-format": "Battery: {capacity}%",
-    },
-    "custom/updates": {
-        "format": "  {}",
-        "return-type": "json",
-        "format-icons": {
-            "has-updates": " ",
-            "updated": " "
-        },
-        "on-click": "alacritty -e bash ~/.config/hypr/scripts/update_system.sh",
-        "exec-if": "which waybar-module-pacman-updates",
-        "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
-    },
-    "network": {
-        "format-wifi": "󰤨 ",
-        "format-ethernet": "  {ipaddr}/{cidr}",
-        "tooltip-format": "  {ifname} via {gwaddr}",
-        "format-linked": "  {ifname} (No IP)",
-        "format-disconnected": "󰤮 ",
-        "tooltip": false,
-        "on-click": "alacritty -e fish nmtui"
-    },
-    "pulseaudio": {
-        "scroll-step": 5,
-        "format": "{icon}",
-        "format-muted": "",
-        "on-click-right": "pavucontrol",
-        "on-click": "pamixer --toggle-mute",
-        "tooltip": false,
-        "format-icons": {
-           "headphone": "",
-           "hands-free": "",
-           "headset": "",
-           "phone": "",
-           "portable": "",
-           "car": "",
-           "default": [" ", " ", " "]
-        },
-    },
-    "custom/bluetooth": {
-      "format": "",
-      "on-click": "blueberry",
-      "tooltip": false
-    },
-    "custom/separator": {
-      "format": "|",
-      "tooltip": false
-    }
+      "format": "{icon} ",
+      "format-charging": " {icon} ",
+      "format-plugged": " {icon} ",
+      "format-icons": ["", "", "", "", ""],
+      "interval": 3,
+      "tooltip-format": "Battery: {capacity}%",
+  },
+  "custom/updates": {
+      "format": "  {}",
+      "return-type": "json",
+      "format-icons": {
+          "has-updates": " ",
+          "updated": " "
+      },
+      "on-click": "alacritty -e bash ~/.config/hypr/scripts/update_system.sh",
+      "exec-if": "which waybar-module-pacman-updates",
+      "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
+  },
+  "network": {
+      "format-wifi": "󰤨 ",
+      "format-ethernet": "  {ipaddr}/{cidr}",
+      "tooltip-format": "  {ifname} via {gwaddr}",
+      "format-linked": "  {ifname} (No IP)",
+      "format-disconnected": "󰤮 ",
+      "tooltip": false,
+      "on-click": "alacritty -e fish nmtui"
+  },
+  "pulseaudio": {
+      "scroll-step": 5,
+      "format": "{icon}",
+      "format-muted": "",
+      "on-click-right": "pavucontrol",
+      "on-click": "pamixer --toggle-mute",
+      "tooltip": false,
+      "format-icons": {
+         "headphone": "",
+         "hands-free": "",
+         "headset": "",
+         "phone": "",
+         "portable": "",
+         "car": "",
+         "default": [" ", " ", " "]
+      }
+  },
+  "custom/bluetooth": {
+    "format": "",
+    "on-click": "blueberry",
+    "tooltip": false
+  },
+  "custom/separator": {
+    "format": "|",
+    "tooltip": false
   }
 }

@@ -1,4 +1,3 @@
-
 vim.opt.number = true
 vim.g.autoformat = false
 vim.g.snacks_animate = false
