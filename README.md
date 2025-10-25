@@ -1,13 +1,10 @@
 # See how it looks
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aec13320-5486-46d5-9e36-b40159c64240" />
+<img width="1920" height="1080" alt="screenshot-2025-10-24-20:05:19" src="https://github.com/user-attachments/assets/241c11e9-e5e9-46d1-ae34-f7d5ca60847b" />
 
 # Themes
 
 - SDDM: [SDDM Astronaut Theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 - Wallpapers: [My walls](https://github.com/dilanrojas/wallpapers.git)
-
-> [!NOTE]
-> This configuration has been made for a specific screen DPI. Font size and padding might look big.
 
 # Programs
 
