@@ -1,9 +1,9 @@
 * {
-    primary: #458588;
+    primary: #808080;
     primary-fixed: #e0f8f9;
     primary-fixed-dim: #c8d4d4;
-    on-primary: #303030;
-    on-primary-fixed: #222222;
+    on-primary: #202020;
+    on-primary-fixed: #121212;
     on-primary-fixed-variant: #3c3c3c;
     primary-container: #3c3c3c;
     on-primary-container: #e0f8f9;

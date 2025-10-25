@@ -18,7 +18,7 @@
   "timeout": 5,
   "timeout-low": 5,
   "timeout-critical": 8,
-  "fit-to-screen": false,
+  "fit-to-screen": true,
   "relative-timestamps": true,
   "control-center-width": 472,
   "control-center-height": 520,
