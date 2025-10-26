@@ -33,7 +33,7 @@ size = 15
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
-style = "Medium"
+style = "Semibold"
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
@@ -143,4 +143,12 @@ action = "ResetFontSize"
 live_config_reload = true
 working_directory = "None"
 
-import = ["~/.config/alacritty/themes/solarized-osaka.toml"]
+### List of available themes:
+# 1. doom-one
+# 2. everforest
+# 3. gruvbox
+# 4. kanagawa-wave
+# 5. solarized-osaka
+# 6. vercel
+# 7. gruvbox-light
+import = ["~/.config/alacritty/themes/kanagawa-wave.toml"]

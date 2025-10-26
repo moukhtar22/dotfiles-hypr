@@ -6,34 +6,48 @@
   "layer": "top",
   "spacing": 0,
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "custom/separator",
+    "hyprland/language",
+    "idle_inhibitor",
+    "custom/updates",
+    "custom/separator",
+    "hyprland/window"
   ],
   "modules-center": [
-    "clock"
   ],
   "modules-right": [
     "group/tray-expander",
-    "network",
+    "custom/separator",
+    "cpu",
+    "memory",
+    "custom/separator",
     "pulseaudio",
-    "battery"
+    "backlight",
+    "custom/separator",
+    "network",
+    "battery",
+    "custom/separator",
+    "clock",
+    "custom/notification"
   ],
   // Modules configuration
   "hyprland/workspaces": {
       "disable-scroll": false,
       "format": "{icon}",
       "format-icons": {
-        // "1": "1",
-        // "2": "2",
-        // "3": "3",
-        // "4": "4",
-        // "5": "5",
-        // "6": "6",
-        // "7": "7",
-        // "8": "8",
-        // "9": "9",
-        "empty": "",
-        "default": "",
-        "active": "󰮯"
+        "1": "DEV",
+        "2": "WWW",
+        "3": "IMG",
+        "4": "DOC",
+        "5": "MSC",
+        "6": "FLS",
+        "7": "GFX",
+        "8": "GMP",
+        "9": "SYS",
+        // "empty": "",
+        "default": ""
+        // "active": "󰮯"
      },
      "persistent-workspaces": {
            "*": 5
@@ -85,10 +99,7 @@
     },
     "modules": [
       "custom/expand-icon",
-      "hyprland/language",
-      "idle_inhibitor",
       "custom/bluetooth",
-      "custom/updates",
       "tray"
     ]
   },
@@ -97,71 +108,74 @@
     "tooltip": false
   },
   "tray": {
-      "icon-size": 16,
-      "spacing": 13
+    "icon-size": 16,
+    "spacing": 13
   },
   "clock": {
-      "format": "{:%b %d  %I:%M %p}",
-      "on-click": "swaync-client -t -sw",
-      "on-click-right": "gnome-clocks",
-      "tooltip": false
+    "format": "    {:%I:%M %p}",
+    "format-alt": "    {:%d/%m/%y}",
+    "on-click-right": "gnome-clocks",
+    "tooltip": false
   },
   "backlight": {
-      "format": "{icon}  {percent}%",
-      "format-icons": ["󰃞", "󰃟", "󰃠"]
+    "format": "{icon}  {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "scroll-step": 10
   },
   "battery": {
-      "states": {
-          "warning": 10,
-          "critical": 4
-      },
-      "format": "{icon} ",
-      "format-charging": " {icon} ",
-      "format-plugged": " {icon} ",
-      "format-icons": ["", "", "", "", ""],
-      "interval": 3,
-      "tooltip-format": "Battery: {capacity}%"
+    "states": {
+        "warning": 10,
+        "critical": 4
+    },
+    "format": "{icon} ",
+    "format-charging": " {icon} ",
+    "format-plugged": " {icon} ",
+    "format-icons": ["", "", "", "", ""],
+    "interval": 3,
+    "on-click": "alacritty --class float -e sudo nvim /etc/auto-cpufreq.conf",
+    "tooltip-format": "Battery: {capacity}%"
   },
   "custom/updates": {
-      "format": "  {}",
-      "return-type": "json",
-      "format-icons": {
-          "has-updates": " ",
-          "updated": " "
-      },
-      "on-click": "alacritty -e bash ~/.config/hypr/scripts/update_system.sh",
-      "exec-if": "which waybar-module-pacman-updates",
-      "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
+    "format": "  {}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": " ",
+        "updated": " "
+    },
+    "on-click": "alacritty -e bash ~/.config/hypr/scripts/update_system.sh",
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
   },
   "network": {
-      "format": "{icon}",
-      "format-wifi": "{icon}",
-      "format-ethernet": "  {ipaddr}/{cidr}",
-      "tooltip-format": "  {ifname} via {gwaddr}",
-      "format-linked": "  {ifname} (No IP)",
-      "format-disconnected": "󰤮 ",
-      "tooltip": false,
-      "on-click": "alacritty -e nmtui",
-      "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "  {ipaddr}/{cidr}",
+    "tooltip-format": "  {ifname} via {gwaddr}",
+    "format-linked": "  {ifname} (No IP)",
+    "format-disconnected": "󰤮 ",
+    "tooltip": false,
+    "on-click": "alacritty --class float -e nmtui",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
   },
   "pulseaudio": {
-      "scroll-step": 5,
-      "format": "{icon} {volume}%",
-      "format-bluetooth": "{volume}% {icon}",
-      "format-bluetooth-muted": " {icon}",
-      "format-muted": " 0%",
-      "format-source": " {volume}%",
-      "format-source-muted": " ",
-      "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
-          "default": [" ", " ", " "]
-      },
-      "on-click": "pavucontrol"
+    "scroll-step": 5,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": " {icon}",
+    "format-muted": " 0%",
+    "format-source": " {volume}%",
+    "format-source-muted": " ",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": [" ", " ", " "]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": false
   },
   "custom/bluetooth": {
     "format": "",
@@ -171,5 +185,12 @@
   "custom/separator": {
     "format": "|",
     "tooltip": false
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "  {}%"
   }
 }
