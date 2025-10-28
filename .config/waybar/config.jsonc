@@ -3,7 +3,7 @@
 // =============================
 {
   "reload_style_on_change": true,
-  "layer": "top",
+  "layer": "background",
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
@@ -100,6 +100,7 @@
     "modules": [
       "custom/expand-icon",
       "custom/bluetooth",
+      "custom/dropper",
       "tray"
     ]
   },
@@ -112,8 +113,8 @@
     "spacing": 13
   },
   "clock": {
-    "format": "    {:%I:%M %p}",
-    "format-alt": "    {:%d/%m/%y}",
+    "format": "  {:%I:%M %p}",
+    "format-alt": "  {:%d/%m/%y}",
     "on-click-right": "gnome-clocks",
     "tooltip": false
   },
@@ -142,7 +143,7 @@
         "has-updates": " ",
         "updated": " "
     },
-    "on-click": "alacritty -e bash ~/.config/hypr/scripts/update_system.sh",
+    "on-click": "alacritty --class float -e bash ~/.config/hypr/scripts/update_system.sh",
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
   },
@@ -160,8 +161,8 @@
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} {volume}%",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-bluetooth-muted": " {icon}",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-bluetooth-muted": " {icon} ",
     "format-muted": " 0%",
     "format-source": " {volume}%",
     "format-source-muted": " ",
@@ -186,11 +187,18 @@
     "format": "|",
     "tooltip": false
   },
+  "custom/dropper": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "kcolorchooser"
+  },
   "cpu": {
     "format": "  {usage}%",
+    "on-click": "alacritty -e btop",
     "tooltip": false
   },
   "memory": {
-    "format": "  {}%"
+    "format": "  {}%",
+    "on-click": "alacritty -e btop"
   }
 }

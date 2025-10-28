@@ -1,6 +1,7 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
+@import url('../hypr/themes/rose-pine/waybar.css');
 
 button {
   border-radius: 0;
@@ -20,8 +21,10 @@ window#waybar {
 window#waybar>box {
   margin: 0px;
   margin-bottom: 0px;
+  border-radius: 0px;
   padding: 0px 2px;
-  background: #000000;
+  opacity: .9;
+  background: @background;
 }
 
 /* Modules styling */
@@ -30,6 +33,7 @@ window#waybar>box {
 #window,
 #custom-expand-icon,
 #custom-bluetooth,
+#custom-dropper,
 #group-tray-expander,
 #language,
 #idle_inhibitor,
@@ -43,55 +47,43 @@ window#waybar>box {
 #clock,
 #custom-notification {
   margin: 4px 2px;
-  padding: 2px 4px;
+  padding: 0px 4px;
   font-size: 16px;
-  color: #aaa;
   font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   font-weight: 500;
+  opacity: 1;
+  color: @foreground;
 }
 
 /* Tray modules */
+#custom-dropper,
 #custom-bluetooth {
   background: transparent;
-  margin: 0px;
-  margin-right: 10px;
+  margin: 0px 7px;
   padding: 0px;
 }
 
+#custom-dropper { font-size: .9rem; }
+
 /* Fixes */
+#custom-menu         { font-size: 1.2rem                      }
 #battery             { font-size: 1.25rem; margin-right: 2px  }
-#custom-separator    { color: #505050; font-size: .9rem       }
+#custom-separator    { opacity: .15; font-size: .9rem         }
 #cpu                 { margin-right: 5px;                     }
 #custom-bluetooth    { padding-right: 4px                     }
 #clock               { padding-right: 0px; margin-right: 0px; }
 #custom-notification { padding-left: 10px; margin-left: 0px;  }
 #custom-expand-icon  { margin-right: 5px;                     }
 #language            { padding-left: 6px                      }
-#window              { color: #606060; font-size: .95rem      }
+#window              { font-size: .93rem; opacity: .7;        }
 
-#workspaces,
-#window,
-#tray,
-#clock {
-  font-family: 'Liberation Sans'
-}
-
-/* Merged modules */
-#clock {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-#custom-notification {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
+#workspaces, #window, #tray { font-family: 'Liberation Sans' }
 
 /* Battery states */
-#battery.warning:not(.charging),
-#battery.critical:not(.charging)    { color: #b67777 }
-#battery.plugged:not(.charging) { color: #b6a579 }
-#battery.charging { color: #7db682 }
+/* #battery.warning:not(.charging), */
+/* #battery.critical:not(.charging) { color: #b67777 } */
+/* #battery.plugged:not(.charging)  { color: #b6a579 } */
+/* #battery.charging                { color: #7db682 } */
 
 /* Hyprland/workspaces styling */
 #workspaces {
@@ -103,19 +95,20 @@ window#waybar>box {
   margin: 0px 0px;
   border: none;
   font-size: .95rem;
-  color: #606060;
+  color: inherit;
   min-width: 42px;
   box-shadow: none;
   background: transparent;
-  transition: color .12s ease, background .12s ease;
+  opacity: .5;
+  /* transition: color .12s ease, background .12s ease; */
 }
 
 #workspaces button.urgent              { color: #b67777 }
-#workspaces button.empty               { color: #303030 }
-#workspaces button.visible             { color: #aaaaaa }
-#workspaces button:hover:not(.visible) { color: #808080 }
+#workspaces button.empty               { opacity: .2    }
+#workspaces button.visible             { opacity: 1     }
+#workspaces button:hover:not(.visible) { opacity: .8    }
 
 tooltip {
   border-radius: 0px;
-  background: #121212;
+  /* background: @background; */
 }

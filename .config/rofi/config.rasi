@@ -1,5 +1,5 @@
 @theme "/dev/null"
-@import "colors.rasi"
+@import "../hypr/themes/rose-pine/rofi.rasi"
 
 configuration {
 	modi: "window,run,drun";
@@ -7,9 +7,8 @@ configuration {
 	display-window: "Windows";
 	display-run: "Run";
 	drun-display-format: "{icon} {name}";
-	font: "Adwaita Mono Nerd Font 12";
+	font: "IosevkaTerm Nerd Font 13";
 	show-icons: true;
-	icon-theme: "Colloid";
 }
 
 window {
@@ -26,10 +25,10 @@ window {
     /* properties for all widgets */
     enabled:                     true;
     border:			 2px solid;
-    border-color:		 @secondary-container;
-    border-radius:               6px;
+    border-color:		 @window-border;
+    border-radius:               0px;
     cursor:                      "default";
-    background-color:            @on-primary-fixed;
+    background-color:            @background-primary;
 }
 
 mainbox {
@@ -49,8 +48,8 @@ imagebox {
 }
 
 listbox {
-    spacing:                     16px;
-    padding:                     16px;
+    spacing:                     10px;
+    padding:                     10px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    ["inputbar", "message", "listview", "mode-switcher"];
@@ -64,9 +63,9 @@ inputbar {
     enabled:                     true;
     spacing:                     7px;
     padding:                     13px;
-    border-radius:               6px;
-    background-color:		 @on-primary;
-    text-color:			 @on-surface;
+    border-radius:               0px;
+    background-color:		 @background-secondary;
+    text-color:			 @text;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 textbox-prompt-colon {
@@ -89,18 +88,18 @@ mode-switcher{
     enabled:                     true;
     spacing:                     20px;
     background-color:            transparent;
-    text-color:                  @primary-fixed;
+    text-color:                  @text;
 }
 button {
     padding:                     12px;
-    border-radius:               6px;
-    background-color:            @on-primary;
-    text-color:                  @on-surface;
+    border-radius:               0px;
+    background-color:            @background-secondary;
+    text-color:                  @text;
     cursor:                      pointer;
 }
 button selected {
-    background-color:            @primary;
-    text-color:                  @on-secondary;
+    background-color:            @background-secondary;
+    text-color:                  @text-secondary;
 }
 
 listview {
@@ -117,7 +116,7 @@ listview {
     
     spacing:                     10px;
     background-color:            transparent;
-    text-color:                  @on-surface;
+    text-color:                  @text;
     cursor:                      "default";
 }
 
@@ -125,9 +124,9 @@ element {
     enabled:                     true;
     spacing:                     12px;
     padding:                     12px;
-    border-radius:               6px;
+    border-radius:               0px;
     background-color:            transparent;
-    text-color:                  @on-surface;
+    text-color:                  @text;
     cursor:                      pointer;
 }
 element normal.normal {
@@ -136,23 +135,23 @@ element normal.normal {
 }
 element normal.urgent {
     background-color:            @error;
-    text-color:                  @on-surface;
+    text-color:                  @text;
 }
 element normal.active {
-    background-color:            @primary;
-    text-color:                  @on-surface;
+    background-color:            @background-secondary;
+    text-color:                  @text;
 }
 element selected.normal {
-    background-color:            @primary;
-    text-color:                  @on-secondary;
+    background-color:            @background-secondary;
+    text-color:                  @text-secondary;
 }
 element selected.urgent {
     background-color:            @error;
-    text-color:                  @on-secondary;
+    text-color:                  @text-secondary;
 }
 element selected.active {
     background-color:            @error;
-    text-color:                  @on-secondary;
+    text-color:                  @text-secondary;
 }
 element-icon {
     background-color:            transparent;
@@ -173,15 +172,15 @@ message {
 }
 textbox {
     padding:                     12px;
-    border-radius:               6px;
-    background-color:            @on-primary;
-    text-color:                  @on-surface;
+    border-radius:               0px;
+    background-color:            @background-secondary;
+    text-color:                  @text;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
 error-message {
     padding:                     12px;
-    border-radius:               6px;
-    background-color:            @on-primary;
-    text-color:                  @on-surface;
+    border-radius:               0px;
+    background-color:            @background-secondary;
+    text-color:                  @text;
 }

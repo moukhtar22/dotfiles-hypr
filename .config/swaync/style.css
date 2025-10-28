@@ -1,21 +1,13 @@
+@import url('../hypr/themes/rose-pine/swaync.css');
+
 :root {
-  --cc-bg: #222222;
-  --noti-border-color: #404040;
-  --noti-bg: 29, 29, 32;
-  --noti-bg-alpha: 1;
-  --noti-bg-darker: #222222;
-  --noti-bg-hover: #262626;
-  --noti-bg-focus: #262626;
-  --noti-close-bg: rgb(78, 78, 78);
-  --noti-close-bg-hover: rgb(94, 94, 94);
-  --text-color: #ffffff;
-  --text-color-disabled: #cccccc;
+  --border: 2px solid var(--noti-border-color);
+  --border-radius: 0px;
+
   --bg-selected: rgb(0, 128, 255);
   --notification-icon-size: 48px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
   --notification-group-icon-size: 48px;
-  --border: 2px solid var(--noti-border-color);
-  --border-radius: 6px;
   --notification-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3),
     0 1px 3px 1px rgba(0, 0, 0, 0.7), 0 2px 6px 2px rgba(0, 0, 0, 0.3);
   --font-size-body: 14px;
@@ -88,7 +80,7 @@ notificationwindow, blankwindow, blankwindow {
   padding: 6px;
   margin-right: 0px;
   transition: var(--hover-tranistion);
-  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+  background: var(--noti-bg);
 }
 
 .notification-row .notification-background .notification.low {
@@ -326,6 +318,7 @@ notificationwindow, blankwindow, blankwindow {
   color: var(--text-color);
   border-radius: var(--border-radius);
   padding: 8px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
 }
 
 .control-center .control-center-list-placeholder {
@@ -406,8 +399,8 @@ notificationwindow, blankwindow, blankwindow {
 
 /* Mpris widget */
 :root {
-  --mpris-album-art-overlay: rgba(0, 0, 0, 0.55);
-  --mpris-button-hover: rgba(0, 0, 0, 0.5);
+  --mpris-album-art-overlay: var(--noti-bg-darker);
+  --mpris-button-hover: var(--noti-bg-hover);
   --mpris-album-art-icon-size: 96px;
   --mpris-album-art-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
 }

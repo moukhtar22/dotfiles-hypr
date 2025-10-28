@@ -5,12 +5,11 @@ set fish_greeting ""
 
 # Aliases
 alias neofetch pfetch
-alias ls "lsd -la"
+alias ls "eza -lh --group-directories-first --icons=auto"
 alias cat "bat"
+alias tkn "cat ~/Documents/Files/GitToken.txt"
 alias update "sudo pacman -Syu && yay -Syu"
 alias n nvim
-alias img "kitty +kitten icat"
-alias cl clear
 
 alias mount "udisksctl mount -b"
 alias umount "udisksctl unmount -b"

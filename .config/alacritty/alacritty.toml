@@ -6,12 +6,12 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = false
 decorations = "full"
 title = "Alacritty@ArchLinux"
-opacity = 0.98
+opacity = 0.9
 decorations_theme_variant = "Dark"
 
 [window.padding]
-x = 8
-y = 8
+x = 12
+y = 12
 
 [window.dimensions]
 columns = 100
@@ -29,7 +29,7 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 15
+size = 15.5
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
@@ -151,4 +151,4 @@ working_directory = "None"
 # 5. solarized-osaka
 # 6. vercel
 # 7. gruvbox-light
-import = ["~/.config/alacritty/themes/kanagawa-wave.toml"]
+import = ["~/.config/hypr/themes/rose-pine/alacritty.toml"]
