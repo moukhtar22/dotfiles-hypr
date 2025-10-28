@@ -20,6 +20,10 @@
 - Doom One
 - Everforest
 
+> [!NOTE]
+> Use SUPER + T for launching the theme selector.
+> Check ~/.config/hypr/themes/ for adding your own theme.
+
 # Themes
 
 - SDDM: [SDDM Astronaut Theme](https://github.com/Keyitdev/sddm-astronaut-theme)
