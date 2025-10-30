@@ -1,13 +1,6 @@
-# Previews
+# Preview
 
-## Gruvbox
-<img width="1920" height="1080" alt="screenshot-2025-10-28-17:02:23" src="https://github.com/user-attachments/assets/d78d415e-f400-433f-b54e-08c7c426b308" />
-
-## Solarized Osaka
-<img width="1920" height="1080" alt="screenshot-2025-10-28-17:03:16" src="https://github.com/user-attachments/assets/98ab9812-caed-4c1e-8dcc-70eddac9efec" />
-
-## Rosé Pine
-<img width="1920" height="1080" alt="screenshot-2025-10-28-17:03:32" src="https://github.com/user-attachments/assets/da93847b-3aa3-4eda-ab92-adb4a349c647" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2196341c-8341-47dd-a5ec-b8fd957ce682" />
 
 # List of avaiable themes
 
