@@ -1,4 +1,4 @@
-@import url('../hypr/themes/solarized-light/swaync.css');
+@import url('../hypr/themes/doom-one/swaync.css');
 
 :root {
   --border: 2px solid var(--noti-border-color);
@@ -291,7 +291,7 @@ notificationwindow, blankwindow, blankwindow {
 }
 
 .notification-group.collapsed.not-expanded {
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .notification-group.collapsed .notification-row .notification {

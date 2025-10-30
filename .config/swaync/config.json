@@ -45,7 +45,7 @@
   "notification-visibility": {
     "example-name": {
       "state": "enabled",
-      "urgency": "Normal",
+      "urgency": "Low",
       "app-name": "Spotify"
     }
   },

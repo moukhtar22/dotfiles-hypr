@@ -4,7 +4,7 @@
 set fish_greeting ""
 
 # Aliases
-alias neofetch pfetch
+alias neofetch "nitch"
 alias ls "eza -lh --group-directories-first --icons=auto"
 alias cat "bat"
 alias tkn "cat ~/Documents/Files/GitToken.txt"
@@ -16,3 +16,10 @@ alias umount "udisksctl unmount -b"
 
 # Prompt
 starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/jwd/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

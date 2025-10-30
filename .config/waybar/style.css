@@ -1,7 +1,7 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
-@import url('../hypr/themes/solarized-light/waybar.css');
+@import url('../hypr/themes/doom-one/waybar.css');
 
 button {
   border-radius: 0;
@@ -25,6 +25,7 @@ window#waybar>box {
   padding: 0px;
   opacity: 1;
   background: @background;
+  border: none;
 }
 
 /* Modules styling */
@@ -47,13 +48,21 @@ window#waybar>box {
 #clock,
 #custom-notification {
   margin: 0px 0px;
-  padding: 4px 5px;
-  font-size: 15.5px;
+  padding: 5px 5px;
+  font-size: 16px;
   font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   font-weight: 500;
   background: transparent;
   opacity: 1;
   color: @foreground;
+}
+
+
+#custom-separator {
+  opacity: .2;
+  font-size: .9rem;
+  margin: 0px;
+  padding: 0px 4px;
 }
 
 /* Colors */
@@ -76,18 +85,26 @@ window#waybar>box {
 #custom-dropper { font-size: .9rem; }
 
 /* Fixes */
-#custom-menu         { font-size: 1.2rem                       }
 #battery             { font-size: 1.25rem; padding-right: 6px  }
-#custom-separator    { opacity: .15; font-size: .9rem          }
 #cpu                 { margin-right: 5px;                      }
 #custom-bluetooth    { padding-right: 4px                      }
 #clock               { padding-right: 2px;                     }
 #custom-notification { padding-left: 10px; padding-right: 6px; }
 #custom-expand-icon  { padding-right: 5px;                     }
 #language            { padding-left: 6px                       }
-#window              { font-size: 1rem;                        }
 
-#tray { font-family: 'Adwaita Sans' }
+#workspaces button,
+#window,
+tray {
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+#workspaces,
+#window,
+#tray {
+  font-family: 'Adwaita Sans'
+}
 
 /* Battery states */
 /* #battery.warning:not(.charging), */
@@ -105,9 +122,8 @@ window#waybar>box {
   margin: 0px 0px;
   border: none;
   color: inherit;
-  min-width: 34px;
+  min-width: 40px;
   letter-spacing: 0px;
-  font-weight: inherit;
   box-shadow: none;
   background: transparent;
   opacity: .5;
