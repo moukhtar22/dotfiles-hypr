@@ -1,8 +1,8 @@
-# List of avaiable themes
+# List of available themes
 
 - [Gruvbox](#gruvbox)
 - [Solarized Osaka](#solarized-osaka)
-- [Rosé Pine](#rose-pine)
+- [Rosé Pine](#rosé-pine)
 - [Kanagawa Wave](#kanagawa-wave)
 - [Vercel](#vercel)
 - [Doom One](#doom-one)
