@@ -151,4 +151,4 @@ working_directory = "None"
 # 5. solarized-osaka
 # 6. vercel
 # 7. gruvbox-light
-import = ["~/.config/hypr/themes/gruvbox/alacritty.toml"]
+import = ["~/.config/hypr/themes/solarized-light/alacritty.toml"]

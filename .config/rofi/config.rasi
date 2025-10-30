@@ -1,5 +1,5 @@
 @theme "/dev/null"
-@import "../hypr/themes/gruvbox/rofi.rasi"
+@import "../hypr/themes/solarized-light/rofi.rasi"
 
 configuration {
 	modi: "window,run,drun";

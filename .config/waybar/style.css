@@ -1,7 +1,7 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
-@import url('../hypr/themes/gruvbox/waybar.css');
+@import url('../hypr/themes/solarized-light/waybar.css');
 
 button {
   border-radius: 0;

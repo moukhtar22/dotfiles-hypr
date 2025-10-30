@@ -1,4 +1,4 @@
-@import url('../hypr/themes/gruvbox/swaync.css');
+@import url('../hypr/themes/solarized-light/swaync.css');
 
 :root {
   --border: 2px solid var(--noti-border-color);
@@ -319,7 +319,8 @@ notificationwindow, blankwindow, blankwindow {
   border-radius: var(--border-radius);
   border: 2px solid var(--text-color);
   padding: 8px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
+  /* box-shadow: 0px 5px 20px rgba(0, 0, 0, .3); */
+  box-shadow: none;
 }
 
 .control-center .control-center-list-placeholder {
