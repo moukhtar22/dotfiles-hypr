@@ -1,17 +1,14 @@
-# Preview
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2196341c-8341-47dd-a5ec-b8fd957ce682" />
-
 # List of avaiable themes
 
-- Gruvbox
-- Solarized Osaka
-- Rosé Pine
-- Gruvbox Light
-- Kanagawa Wave
-- Vercel
-- Doom One
-- Everforest
+- [Gruvbox](#gruvbox)
+- [Solarized Osaka](#solarized-osaka)
+- [Rosé Pine](#rose-pine)
+- [Kanagawa Wave](#kanagawa-wave)
+- [Vercel](#vercel)
+- [Doom One](#doom-one)
+- [Everforest](#everforest)
+- [Gruvbox Light](#gruvbox-light)
+- [Solarized Light](#solarized-light)
 
 > [!NOTE]
 > Use SUPER + T for launching the theme selector.
@@ -89,3 +86,32 @@ git clone https://github.com/maximilionus/lucidglyph
 cd lucidglyph
 sudo ./lucidglyph.sh install
 ```
+
+# See how it looks
+
+## Gruvbox
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:29:38" src="https://github.com/user-attachments/assets/6e120ed4-0a84-4736-b309-ecbce78da83e" />
+
+## Solarized Osaka
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:29:26" src="https://github.com/user-attachments/assets/0c3708fd-5911-4900-97f9-f6b31bf8f217" />
+
+## Rosé Pine
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:29:10" src="https://github.com/user-attachments/assets/973cb7c4-91d7-42f7-8583-1531379ec3f3" />
+
+## Kanagawa Wave
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:28:48" src="https://github.com/user-attachments/assets/43551df7-5182-4882-b509-1f31bcc14bee" />
+
+## Vercel
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:28:57" src="https://github.com/user-attachments/assets/f530e749-b690-4a0b-bf2b-0bea97ca4047" />
+
+## Doom One
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:28:33" src="https://github.com/user-attachments/assets/05d51752-3a78-43da-921d-6ce1b0e01d83" />
+
+## Everforest
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:28:42" src="https://github.com/user-attachments/assets/e0051db3-5494-44cf-82c2-ec715966d468" />
+
+## Gruvbox Light
+<img width="1920" height="1080" alt="screenshot-2025-10-29-20:29:32" src="https://github.com/user-attachments/assets/5139d801-1054-4415-ad8f-f28873fb090e" />
+
+## Solarized Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c1b1521d-0d42-4832-9614-ce058d7cba56" />
