@@ -1,9 +1,9 @@
 :root {
-  --cc-bg: #00141A;
-  --noti-border-color: #657b83;
-  --noti-bg-darker: #001b22;
-  --noti-bg-hover: #00212a;
-  --text-color-disabled: #506167;
+  --cc-bg: #11121D;
+  --noti-border-color: #A0A8CD;
+  --noti-bg-darker: #171827;
+  --noti-bg-hover: #191b2b;
+  --text-color-disabled: #8e95b6;
 
   --noti-bg: var(--cc-bg);
   --noti-close-bg: var(--noti-bg-darker);

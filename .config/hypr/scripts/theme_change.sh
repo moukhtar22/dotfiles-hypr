@@ -47,6 +47,9 @@ bash "$SCRIPTS/nvim_theme.sh" "$NVIM_THEME"
 # Wallpaper
 bash "$SCRIPTS/wallpaper_change.sh" "$WALL1" "$WALL2"
 
+# Wlogout
+bash "$SCRIPTS/wlogout_theme.sh" "$THEME"
+
 # Hyprland
 bash "$SCRIPTS/hyprland_theme.sh" "$THEME"
 

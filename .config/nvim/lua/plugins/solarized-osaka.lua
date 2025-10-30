@@ -8,6 +8,9 @@ return {
         floats = "transparent",
         transparent = false
       },
+      on_colors = function(colors)
+        colors.bg_highlight = "#101010"
+      end
     })
   end
 }

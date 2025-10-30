@@ -6,7 +6,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = false
 decorations = "full"
 title = "Alacritty@ArchLinux"
-opacity = 0.9
+opacity = 1
 decorations_theme_variant = "Dark"
 
 [window.padding]
@@ -33,7 +33,7 @@ size = 15.5
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
-style = "Semibold"
+style = "Medium"
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
@@ -151,4 +151,4 @@ working_directory = "None"
 # 5. solarized-osaka
 # 6. vercel
 # 7. gruvbox-light
-import = ["~/.config/hypr/themes/rose-pine/alacritty.toml"]
+import = ["~/.config/hypr/themes/gruvbox/alacritty.toml"]

@@ -1,7 +1,7 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
-@import url('../hypr/themes/rose-pine/waybar.css');
+@import url('../hypr/themes/gruvbox/waybar.css');
 
 button {
   border-radius: 0;
@@ -22,8 +22,8 @@ window#waybar>box {
   margin: 0px;
   margin-bottom: 0px;
   border-radius: 0px;
-  padding: 0px 2px;
-  opacity: .9;
+  padding: 0px;
+  opacity: 1;
   background: @background;
 }
 
@@ -46,38 +46,48 @@ window#waybar>box {
 #battery,
 #clock,
 #custom-notification {
-  margin: 4px 2px;
-  padding: 0px 4px;
-  font-size: 16px;
+  margin: 0px 0px;
+  padding: 4px 5px;
+  font-size: 15.5px;
   font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   font-weight: 500;
+  background: transparent;
   opacity: 1;
   color: @foreground;
 }
+
+/* Colors */
+#workspaces                  { color: @color4; }
+#language, #idle_inhibitor,
+#custom-updates              { color: @color3; }
+#cpu, #memory                { color: @color5; }
+#pulseaudio, #backlight      { color: @color6; }
+#network, #battery           { color: @color2; }
+#clock, #custom-notification { color: @color1; }
 
 /* Tray modules */
 #custom-dropper,
 #custom-bluetooth {
   background: transparent;
-  margin: 0px 7px;
-  padding: 0px;
+  margin: 0px 0px;
+  padding: 0px 12px;
 }
 
 #custom-dropper { font-size: .9rem; }
 
 /* Fixes */
-#custom-menu         { font-size: 1.2rem                      }
-#battery             { font-size: 1.25rem; margin-right: 2px  }
-#custom-separator    { opacity: .15; font-size: .9rem         }
-#cpu                 { margin-right: 5px;                     }
-#custom-bluetooth    { padding-right: 4px                     }
-#clock               { padding-right: 0px; margin-right: 0px; }
-#custom-notification { padding-left: 10px; margin-left: 0px;  }
-#custom-expand-icon  { margin-right: 5px;                     }
-#language            { padding-left: 6px                      }
-#window              { font-size: .93rem; opacity: .7;        }
+#custom-menu         { font-size: 1.2rem                       }
+#battery             { font-size: 1.25rem; padding-right: 6px  }
+#custom-separator    { opacity: .15; font-size: .9rem          }
+#cpu                 { margin-right: 5px;                      }
+#custom-bluetooth    { padding-right: 4px                      }
+#clock               { padding-right: 2px;                     }
+#custom-notification { padding-left: 10px; padding-right: 6px; }
+#custom-expand-icon  { padding-right: 5px;                     }
+#language            { padding-left: 6px                       }
+#window              { font-size: 1rem;                        }
 
-#workspaces, #window, #tray { font-family: 'Liberation Sans' }
+#tray { font-family: 'Adwaita Sans' }
 
 /* Battery states */
 /* #battery.warning:not(.charging), */
@@ -86,17 +96,18 @@ window#waybar>box {
 /* #battery.charging                { color: #7db682 } */
 
 /* Hyprland/workspaces styling */
-#workspaces {
-  padding: 0px 0px;
-}
+#workspaces { padding: 0px 0px; }
+
+#workspaces button:first-child { padding-left: 5px }
 
 #workspaces button {
   padding: 0px 0px;
   margin: 0px 0px;
   border: none;
-  font-size: .95rem;
   color: inherit;
-  min-width: 42px;
+  min-width: 34px;
+  letter-spacing: 0px;
+  font-weight: inherit;
   box-shadow: none;
   background: transparent;
   opacity: .5;

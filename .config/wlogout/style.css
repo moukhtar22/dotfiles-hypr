@@ -1,3 +1,5 @@
+@import url('../hypr/themes/gruvbox/waybar.css');
+
 * {
 	background-image: none;
 	box-shadow: none;
@@ -12,7 +14,7 @@ button {
   border-color: black;
 	text-decoration-color: #FFFFFF;
   color: #FFFFFF;
-	background-color: #121212;
+	background-color: @background;
 	border-style: solid;
 	border-width: 1px;
 	background-repeat: no-repeat;
@@ -21,7 +23,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #404040;
+	background-color: @color2;
 	outline-style: none;
   color: white;
 }

@@ -1,4 +1,4 @@
-@import url('../hypr/themes/rose-pine/swaync.css');
+@import url('../hypr/themes/gruvbox/swaync.css');
 
 :root {
   --border: 2px solid var(--noti-border-color);
@@ -70,7 +70,7 @@ notificationwindow, blankwindow, blankwindow {
 }
 
 .notification-row .notification-background {
-  padding: 22px;
+  padding: 18px;
 }
 
 .notification-row .notification-background .notification {
@@ -317,6 +317,7 @@ notificationwindow, blankwindow, blankwindow {
   background: var(--cc-bg);
   color: var(--text-color);
   border-radius: var(--border-radius);
+  border: 2px solid var(--text-color);
   padding: 8px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
 }
