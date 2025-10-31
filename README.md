@@ -7,6 +7,11 @@
 - [Vercel](#vercel)
 - [Doom One](#doom-one)
 - [Everforest](#everforest)
+- [Onedark](#onedark)
+- [Catppuccin Mocha](#catppuccin-mocha)
+- [Everforest Light](#everforest-light)
+- [Kanagawa Light (Lotus)](#kanagawa-light)
+- [Rosé Pine Light (Dawn)](#rosé-pine-light)
 - [Gruvbox Light](#gruvbox-light)
 - [Solarized Light](#solarized-light)
 
@@ -109,6 +114,21 @@ sudo ./lucidglyph.sh install
 
 ## Everforest
 <img width="1920" height="1080" alt="screenshot-2025-10-29-20:28:42" src="https://github.com/user-attachments/assets/e0051db3-5494-44cf-82c2-ec715966d468" />
+
+## Onedark
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cd3bf6a9-5d0e-4869-b3c0-0c7e186bb35e" />
+
+## Catppuccin Mocha
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/18411c78-187b-4109-9e33-7114bf7ca759" />
+
+## Everforest Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/caf31843-1c32-473b-95af-8be2dafbefc3" />
+
+## Kanagawa Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/12edc87d-386c-466a-a892-1596693e3e8f" />
+
+## Rosé Pine Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e78672ed-3507-45e2-ac51-2ed5bea6d1ee" />
 
 ## Gruvbox Light
 <img width="1920" height="1080" alt="screenshot-2025-10-29-20:29:32" src="https://github.com/user-attachments/assets/5139d801-1054-4415-ad8f-f28873fb090e" />
