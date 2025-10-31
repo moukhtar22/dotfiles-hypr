@@ -1,5 +1,5 @@
 @theme "/dev/null"
-@import "../hypr/themes/onedark/rofi.rasi"
+@import "../hypr/themes/doom-one/rofi.rasi"
 
 configuration {
 	modi: "window,run,drun";
@@ -7,7 +7,7 @@ configuration {
 	display-window: "Windows";
 	display-run: "Run";
 	drun-display-format: "{icon} {name}";
-	font: "IosevkaTerm Nerd Font 13";
+	font: "IosevkaTerm Nerd Font Medium 13";
 	show-icons: true;
 }
 

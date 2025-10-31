@@ -11,6 +11,13 @@ alias tkn "cat ~/Documents/Files/GitToken.txt"
 alias update "sudo pacman -Syu && yay -Syu"
 alias n nvim
 
+alias i "sudo pacman -S"
+alias s "pacman -Ss"
+alias r "pacman -Rns"
+alias yi "yay -S"
+alias ys "yay -Ss"
+alias yr "yay -Rns"
+
 alias mount "udisksctl mount -b"
 alias umount "udisksctl unmount -b"
 

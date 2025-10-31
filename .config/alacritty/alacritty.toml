@@ -10,8 +10,8 @@ opacity = 1
 decorations_theme_variant = "Dark"
 
 [window.padding]
-x = 12
-y = 12
+x = 10
+y = 9
 
 [window.dimensions]
 columns = 100
@@ -33,7 +33,7 @@ size = 16
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
-style = "Medium"
+style = "Semibold"
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
@@ -151,4 +151,4 @@ working_directory = "None"
 # 5. solarized-osaka
 # 6. vercel
 # 7. gruvbox-light
-import = ["~/.config/hypr/themes/onedark/alacritty.toml"]
+import = ["~/.config/hypr/themes/doom-one/alacritty.toml"]

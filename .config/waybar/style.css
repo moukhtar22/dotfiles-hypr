@@ -1,7 +1,7 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
-@import url('../hypr/themes/onedark/waybar.css');
+@import url('../hypr/themes/doom-one/waybar.css');
 
 button {
   border-radius: 0;
