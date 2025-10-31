@@ -41,11 +41,11 @@ style = "Bold"
 
 [font.italic]
 family = "IosevkaTerm Nerd Font"
-style = "Italic"
+style = "Medium"
 
 [font.bold_italic]
 family = "IosevkaTerm Nerd Font"
-style = "Bold Italic"
+style = "Bold"
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
@@ -151,4 +151,4 @@ working_directory = "None"
 # 5. solarized-osaka
 # 6. vercel
 # 7. gruvbox-light
-import = ["~/.config/hypr/themes/doom-one/alacritty.toml"]
+import = ["~/.config/hypr/themes/onedark/alacritty.toml"]

@@ -195,11 +195,11 @@
   },
   "cpu": {
     "format": "  {usage}%",
-    "on-click": "alacritty -e btop",
+    "on-click": "alacritty -e htop",
     "tooltip": false
   },
   "memory": {
     "format": "  {}%",
-    "on-click": "alacritty -e btop"
+    "on-click": "alacritty -e htop"
   }
 }

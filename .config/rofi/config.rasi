@@ -1,5 +1,5 @@
 @theme "/dev/null"
-@import "../hypr/themes/doom-one/rofi.rasi"
+@import "../hypr/themes/onedark/rofi.rasi"
 
 configuration {
 	modi: "window,run,drun";

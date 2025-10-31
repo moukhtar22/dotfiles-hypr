@@ -1,0 +1,11 @@
+* {
+    window-border: #575279;
+    background-primary: #faf4ed;
+
+    background-secondary: #e2ddd6;
+
+    text: #575279;
+    text-secondary: #605b86;
+
+    error: #e0b4b4;
+}
