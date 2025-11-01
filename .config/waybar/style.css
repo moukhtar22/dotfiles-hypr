@@ -1,7 +1,13 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
-@import url('../hypr/themes/doom-one/waybar.css');
+@import url('../hypr/themes/nordic/waybar.css');
+
+*{
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
 
 button {
   border-radius: 0;
@@ -48,10 +54,10 @@ window#waybar>box {
 #clock,
 #custom-notification {
   margin: 0px 0px;
-  padding: 5px 5px;
-  font-size: 16px;
-  font-family: 'IosevkaTerm Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
-  font-weight: 500;
+  padding: 7px 5px;
+  font-size: 13px;
+  font-family: 'JetBrainsMono Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  font-weight: 400;
   background: transparent;
   opacity: 1;
   color: @foreground;
@@ -82,29 +88,17 @@ window#waybar>box {
   padding: 0px 12px;
 }
 
-#custom-dropper { font-size: .9rem; }
+#custom-dropper { font-size: .8rem; }
 
 /* Fixes */
-#battery             { font-size: 1.25rem; padding-right: 6px  }
-#cpu                 { margin-right: 5px;                      }
-#custom-bluetooth    { padding-right: 4px                      }
-#clock               { padding-right: 2px;                     }
+#battery             { padding-right: 6px  }
+#cpu                 { margin-right: 5px;  }
+#custom-bluetooth    { padding-right: 4px  }
+#pulseaudio          { padding-right: 8px  }
+#clock               { padding-right: 2px; }
+#custom-expand-icon  { padding-right: 5px; }
+#language            { padding-left: 6px;  }
 #custom-notification { padding-left: 10px; padding-right: 6px; }
-#custom-expand-icon  { padding-right: 5px;                     }
-#language            { padding-left: 6px                       }
-
-#workspaces button,
-#window,
-tray {
-  font-size: .92rem;
-  font-weight: 600;
-}
-
-#workspaces,
-#window,
-#tray {
-  font-family: 'Adwaita Sans'
-}
 
 /* Battery states */
 /* #battery.warning:not(.charging), */
@@ -122,7 +116,7 @@ tray {
   margin: 0px 0px;
   border: none;
   color: inherit;
-  min-width: 40px;
+  min-width: 35px;
   letter-spacing: 0px;
   box-shadow: none;
   background: transparent;

@@ -129,16 +129,16 @@
         "warning": 10,
         "critical": 4
     },
-    "format": "{icon} ",
-    "format-charging": " {icon} ",
-    "format-plugged": " {icon} ",
-    "format-icons": ["", "", "", "", ""],
+    "format": "{icon}",
+    "format-charging": " {icon}",
+    "format-plugged": " {icon}",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 3,
     "on-click": "alacritty --class float -e sudo nvim /etc/auto-cpufreq.conf",
     "tooltip-format": "Battery: {capacity}%"
   },
   "custom/updates": {
-    "format": "  {}",
+    "format": " {}",
     "return-type": "json",
     "format-icons": {
         "has-updates": " ",
