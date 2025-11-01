@@ -9,6 +9,7 @@
 - [Everforest](#everforest)
 - [Onedark](#onedark)
 - [Catppuccin Mocha](#catppuccin-mocha)
+- [Nordic](#nordic)
 - [Everforest Light](#everforest-light)
 - [Kanagawa Light (Lotus)](#kanagawa-light)
 - [Rosé Pine Light (Dawn)](#rosé-pine-light)
@@ -120,6 +121,9 @@ sudo ./lucidglyph.sh install
 
 ## Catppuccin Mocha
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/18411c78-187b-4109-9e33-7114bf7ca759" />
+
+## Nordic
+<img width="1920" height="1080" alt="screenshot-2025-11-01-16:16:44" src="https://github.com/user-attachments/assets/156f4a44-02c3-412f-9b43-65adcd7d81d3" />
 
 ## Everforest Light
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/caf31843-1c32-473b-95af-8be2dafbefc3" />
