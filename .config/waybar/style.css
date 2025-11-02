@@ -54,9 +54,9 @@ window#waybar>box {
 #clock,
 #custom-notification {
   margin: 0px 0px;
-  padding: 7px 5px;
-  font-size: 13px;
-  font-family: 'JetBrainsMono Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  padding: 6px 5px;
+  font-size: 14.5px;
+  font-family: 'Caskaydia Cove Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   font-weight: 400;
   background: transparent;
   opacity: 1;
@@ -116,12 +116,12 @@ window#waybar>box {
   margin: 0px 0px;
   border: none;
   color: inherit;
-  min-width: 35px;
+  min-width: 34px;
   letter-spacing: 0px;
   box-shadow: none;
   background: transparent;
   opacity: .5;
-  /* transition: color .12s ease, background .12s ease; */
+  transition: color .08s ease, background .08s ease, opacity .08s ease;
 }
 
 #workspaces button.urgent              { color: #b67777 }

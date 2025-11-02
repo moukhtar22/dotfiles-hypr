@@ -88,8 +88,8 @@
   "idle_inhibitor": {
       "format": "{icon} ",
       "format-icons": {
-          "activated": "",
-          "deactivated": ""
+          "activated": "",
+          "deactivated": ""
       }
   },
   "group/tray-expander": {
@@ -138,11 +138,11 @@
     "tooltip-format": "Battery: {capacity}%"
   },
   "custom/updates": {
-    "format": " {}",
+    "format": "  {}",
     "return-type": "json",
     "format-icons": {
         "has-updates": " ",
-        "updated": " "
+        "updated": " "
     },
     "on-click": "alacritty --class float -e bash ~/.config/hypr/scripts/update_system.sh",
     "exec-if": "which waybar-module-pacman-updates",

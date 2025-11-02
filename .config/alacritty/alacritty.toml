@@ -29,22 +29,22 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 12
+size = 14
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "Caskaydia Cove Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
+family = "Caskaydia Cove Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
+family = "Caskaydia Cove Nerd Font"
+style = "Italic"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
+family = "Caskaydia Cove Nerd Font"
 style = "Bold"
 
 [selection]

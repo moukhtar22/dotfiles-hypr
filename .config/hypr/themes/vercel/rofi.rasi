@@ -1,6 +1,6 @@
 * {
     window-border: #eaeaea;
-    background-primary: #0a0a0a;
+    background-primary: #000000;
 
     background-secondary: #161616;
 
