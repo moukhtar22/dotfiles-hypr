@@ -6,29 +6,19 @@
   "layer": "background",
   "spacing": 0,
   "modules-left": [
-    "hyprland/workspaces",
-    "custom/separator",
-    "hyprland/language",
-    "idle_inhibitor",
-    "custom/updates",
-    "custom/separator",
-    "hyprland/window"
+    "hyprland/workspaces"
   ],
   "modules-center": [
+    "clock"
   ],
   "modules-right": [
     "group/tray-expander",
-    "custom/separator",
-    "cpu",
-    "memory",
+    "idle_inhibitor",
+    "hyprland/language",
     "custom/separator",
     "pulseaudio",
-    "backlight",
-    "custom/separator",
     "network",
     "battery",
-    "custom/separator",
-    "clock",
     "custom/notification"
   ],
   // Modules configuration
@@ -36,19 +26,18 @@
       "disable-scroll": false,
       "format": "{icon}",
       "format-icons": {
-        "1": "DEV",
-        "2": "WWW",
-        "3": "IMG",
-        "4": "DOC",
-        "5": "MSC",
-        "6": "FLS",
-        "7": "GFX",
-        "8": "GMP",
-        "9": "SYS",
-        "10": "EXT",
-        // "empty": "",
-        "default": ""
-        // "active": "󰮯"
+        "default": "",
+        "1": "I",
+        "2": "II",
+        "3": "III",
+        "4": "IV",
+        "5": "V",
+        "6": "VI",
+        "7": "VII",
+        "8": "VIII",
+        "9": "IX",
+        "10": "X",
+        "active": "O"
      },
      "persistent-workspaces": {
            "*": 5
@@ -100,9 +89,8 @@
     },
     "modules": [
       "custom/expand-icon",
-      "custom/bluetooth",
-      "custom/dropper",
-      "tray"
+      "tray",
+      "custom/bluetooth"
     ]
   },
   "custom/expand-icon": {
@@ -114,8 +102,8 @@
     "spacing": 13
   },
   "clock": {
-    "format": "  {:%I:%M %p}",
-    "format-alt": "  {:%d/%m/%y}",
+    "format": "{:%b %d  %I:%M %p}",
+    "on-click": "gnome-calendar",
     "on-click-right": "gnome-clocks",
     "tooltip": false
   },
@@ -161,8 +149,8 @@
   },
   "pulseaudio": {
     "scroll-step": 5,
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{volume}% {icon} ",
+    "format": "{icon} ",
+    "format-bluetooth": "{volume}%  {icon} ",
     "format-bluetooth-muted": " {icon} ",
     "format-muted": " 0%",
     "format-source": " {volume}%",
@@ -174,7 +162,7 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": [" ", " ", " "]
+        "default": ["", "", ""]
     },
     "on-click": "pavucontrol",
     "tooltip": false
@@ -187,11 +175,6 @@
   "custom/separator": {
     "format": "|",
     "tooltip": false
-  },
-  "custom/dropper": {
-    "format": "",
-    "tooltip": false,
-    "on-click": "kcolorchooser"
   },
   "cpu": {
     "format": "  {usage}%",

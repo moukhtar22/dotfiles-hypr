@@ -1,7 +1,7 @@
 /* ==============================
    === Waybar modules styling ===
    ============================== */
-@import url('../hypr/themes/nordic/waybar.css');
+/* @import url('../hypr/themes/nordic/waybar.css'); */
 
 *{
   font-size: inherit;
@@ -30,39 +30,29 @@ window#waybar>box {
   border-radius: 0px;
   padding: 0px;
   opacity: 1;
-  background: @background;
+  background: black;
   border: none;
 }
 
 /* Modules styling */
 #workspaces,
-#custom-separator,
-#window,
+#clock,
 #custom-expand-icon,
-#custom-bluetooth,
-#custom-dropper,
-#group-tray-expander,
-#language,
 #idle_inhibitor,
-#custom-updates,
-#memory,
-#cpu,
+#language,
 #pulseaudio,
-#backlight,
 #network,
 #battery,
-#clock,
 #custom-notification {
-  margin: 0px 0px;
+  margin: 0px 1px;
   padding: 6px 5px;
   font-size: 14.5px;
-  font-family: 'Caskaydia Cove Nerd Font', 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
+  font-weight: 500;
   background: transparent;
   opacity: 1;
-  color: @foreground;
+  color: white;
 }
-
 
 #custom-separator {
   opacity: .2;
@@ -71,34 +61,32 @@ window#waybar>box {
   padding: 0px 4px;
 }
 
-/* Colors */
-#workspaces                  { color: @color4; }
-#language, #idle_inhibitor,
-#custom-updates              { color: @color3; }
-#cpu, #memory                { color: @color5; }
-#pulseaudio, #backlight      { color: @color6; }
-#network, #battery           { color: @color2; }
-#clock, #custom-notification { color: @color1; }
-
-/* Tray modules */
-#custom-dropper,
-#custom-bluetooth {
-  background: transparent;
-  margin: 0px 0px;
-  padding: 0px 12px;
+#custom-expand-icon,
+#idle_inhibitor,
+#pulseaudio,
+#network,
+#battery,
+#custom-notification {
+  font-family: 'Caskaydia Cove Nerd Font'
 }
 
-#custom-dropper { font-size: .8rem; }
+#custom-expand-icon {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tray modules */
+#tray { margin: 0px 8px }
+
+#custom-bluetooth {
+  margin: 0px 6px;
+  margin-right: 16px
+}
 
 /* Fixes */
-#battery             { padding-right: 6px  }
-#cpu                 { margin-right: 5px;  }
-#custom-bluetooth    { padding-right: 4px  }
-#pulseaudio          { padding-right: 8px  }
-#clock               { padding-right: 2px; }
-#custom-expand-icon  { padding-right: 5px; }
-#language            { padding-left: 6px;  }
-#custom-notification { padding-left: 10px; padding-right: 6px; }
+#battery { margin-right: 6px }
+#custom-expand-icon { margin-right: 8px; padding-left: 4px; }
+#custom-notification { margin: 0; margin-right: 4px; padding: 0; padding-left: 3px; }
 
 /* Battery states */
 /* #battery.warning:not(.charging), */
@@ -109,27 +97,27 @@ window#waybar>box {
 /* Hyprland/workspaces styling */
 #workspaces { padding: 0px 0px; }
 
-#workspaces button:first-child { padding-left: 5px }
+#workspaces button:first-child { margin-left: 4px }
 
 #workspaces button {
   padding: 0px 0px;
   margin: 0px 0px;
   border: none;
   color: inherit;
-  min-width: 34px;
+  min-width: 25px;
   letter-spacing: 0px;
   box-shadow: none;
   background: transparent;
-  opacity: .5;
+  opacity: .8;
   transition: color .08s ease, background .08s ease, opacity .08s ease;
 }
 
 #workspaces button.urgent              { color: #b67777 }
-#workspaces button.empty               { opacity: .2    }
+#workspaces button.empty               { opacity: .4    }
 #workspaces button.visible             { opacity: 1     }
 #workspaces button:hover:not(.visible) { opacity: .8    }
 
 tooltip {
   border-radius: 0px;
-  /* background: @background; */
+  /* background: black; */
 }

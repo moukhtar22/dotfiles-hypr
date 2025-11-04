@@ -33,13 +33,13 @@ echo "🖼️  Wallpapers: $WALL1 (main), $WALL2 (others)"
 echo "📝 Neovim theme: $NVIM_THEME"
 
 # Waybar
-bash "$SCRIPTS/waybar_theme.sh" "$THEME"
+# bash "$SCRIPTS/waybar_theme.sh" "$THEME"
 
 # Alacritty
 bash "$SCRIPTS/alacritty_theme.sh" "$THEME"
 
 # SwayNC
-bash "$SCRIPTS/swaync_theme.sh" "$THEME"
+#bash "$SCRIPTS/swaync_theme.sh" "$THEME"
 
 # Neovim
 bash "$SCRIPTS/nvim_theme.sh" "$NVIM_THEME"
@@ -48,13 +48,13 @@ bash "$SCRIPTS/nvim_theme.sh" "$NVIM_THEME"
 bash "$SCRIPTS/wallpaper_change.sh" "$WALL1" "$WALL2"
 
 # Wlogout
-bash "$SCRIPTS/wlogout_theme.sh" "$THEME"
+#bash "$SCRIPTS/wlogout_theme.sh" "$THEME"
 
 # Hyprland
 bash "$SCRIPTS/hyprland_theme.sh" "$THEME"
 
 # Rofi
-bash "$SCRIPTS/rofi_theme.sh" "$THEME"
+#bash "$SCRIPTS/rofi_theme.sh" "$THEME"
 
 # === GTK / QT Color Settings ===
 QT5_CONF="$HOME/.config/qt5ct/qt5ct.conf"

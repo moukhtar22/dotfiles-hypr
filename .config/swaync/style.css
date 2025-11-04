@@ -1,6 +1,16 @@
-@import url('../hypr/themes/doom-one/swaync.css');
-
 :root {
+  --cc-bg: #1b1b1b;
+  --noti-border-color: #595959;
+  --text-color: #ffffff;
+  --noti-bg-darker: #222222;
+  --noti-bg-hover: #2a2a2a;
+  --text-color-disabled: #aaaaaa;
+
+  --noti-bg: var(--cc-bg);
+  --noti-close-bg: var(--noti-bg-darker);
+  --noti-close-bg-hover: var(--noti-bg-hover);
+  --noti-bg-focus: var(--noti-bg-hover);
+
   --border: 2px solid var(--noti-border-color);
   --border-radius: 0px;
 
@@ -317,7 +327,7 @@ notificationwindow, blankwindow, blankwindow {
   background: var(--cc-bg);
   color: var(--text-color);
   border-radius: var(--border-radius);
-  border: 2px solid var(--text-color);
+  border: 2px solid var(--noti-border-color);
   padding: 8px;
   /* box-shadow: 0px 5px 20px rgba(0, 0, 0, .3); */
   box-shadow: none;

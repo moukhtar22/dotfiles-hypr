@@ -29,11 +29,11 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 14
+size = 13
 
 [font.normal]
 family = "Caskaydia Cove Nerd Font"
-style = "Regular"
+style = "Semibold"
 
 [font.bold]
 family = "Caskaydia Cove Nerd Font"
@@ -41,7 +41,7 @@ style = "Bold"
 
 [font.italic]
 family = "Caskaydia Cove Nerd Font"
-style = "Italic"
+style = "Semibold Italic"
 
 [font.bold_italic]
 family = "Caskaydia Cove Nerd Font"
@@ -143,12 +143,4 @@ action = "ResetFontSize"
 live_config_reload = true
 working_directory = "None"
 
-### List of available themes:
-# 1. doom-one
-# 2. everforest
-# 3. gruvbox
-# 4. kanagawa-wave
-# 5. solarized-osaka
-# 6. vercel
-# 7. gruvbox-light
 import = ["~/.config/hypr/themes/nordic/alacritty.toml"]

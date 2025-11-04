@@ -1,4 +1,4 @@
-@import url('../hypr/themes/doom-one/waybar.css');
+/* @import url('../hypr/themes/nordic/waybar.css'); */
 
 * {
 	background-image: none;
@@ -14,7 +14,7 @@ button {
   border-color: black;
 	text-decoration-color: #FFFFFF;
   color: #FFFFFF;
-	background-color: @background;
+	background-color: #101010;
 	border-style: solid;
 	border-width: 1px;
 	background-repeat: no-repeat;
@@ -23,7 +23,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: @color2;
+	background-color: #606060;
 	outline-style: none;
   color: white;
 }

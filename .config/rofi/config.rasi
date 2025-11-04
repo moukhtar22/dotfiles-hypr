@@ -1,5 +1,5 @@
 @theme "/dev/null"
-@import "../hypr/themes/nordic/rofi.rasi"
+@import "/colors.rasi"
 
 configuration {
 	modi: "window,run,drun";
