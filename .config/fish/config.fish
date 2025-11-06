@@ -13,7 +13,7 @@ alias n nvim
 
 alias i "sudo pacman -S"
 alias s "pacman -Ss"
-alias r "pacman -Rns"
+alias r "sudo pacman -Rns"
 alias yi "yay -S"
 alias ys "yay -Ss"
 alias yr "yay -Rns"

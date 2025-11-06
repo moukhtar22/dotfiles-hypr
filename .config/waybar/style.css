@@ -30,7 +30,7 @@ window#waybar>box {
   border-radius: 0px;
   padding: 0px;
   opacity: 1;
-  background: black;
+  background: #131313;
   border: none;
 }
 
@@ -39,6 +39,7 @@ window#waybar>box {
 #clock,
 #custom-expand-icon,
 #idle_inhibitor,
+#custom-separator,
 #language,
 #pulseaudio,
 #network,
@@ -55,7 +56,7 @@ window#waybar>box {
 }
 
 #custom-separator {
-  opacity: .2;
+  opacity: .15;
   font-size: .9rem;
   margin: 0px;
   padding: 0px 4px;
