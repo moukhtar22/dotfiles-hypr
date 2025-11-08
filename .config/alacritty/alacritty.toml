@@ -6,7 +6,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 dynamic_padding = false
 decorations = "full"
 title = "Alacritty@ArchLinux"
-opacity = 1
+opacity = 0.96
 decorations_theme_variant = "Dark"
 
 [window.padding]
@@ -29,7 +29,7 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 13
+size = 14
 
 [font.normal]
 family = "Caskaydia Cove Nerd Font"
@@ -143,4 +143,4 @@ action = "ResetFontSize"
 live_config_reload = true
 working_directory = "None"
 
-import = ["~/.config/hypr/themes/nordic/alacritty.toml"]
+import = ["~/.config/hypr/themes/doom-one/alacritty.toml"]

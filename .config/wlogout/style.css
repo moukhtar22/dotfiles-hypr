@@ -10,11 +10,12 @@ window {
 }
 
 button {
-  border-radius: 0;
-  border-color: black;
+  border-radius: 6px;
+  margin: 5px;
+  border-color: transparent;
 	text-decoration-color: #FFFFFF;
   color: #FFFFFF;
-	background-color: #101010;
+	background-color: #131313;
 	border-style: solid;
 	border-width: 1px;
 	background-repeat: no-repeat;
@@ -23,7 +24,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #606060;
+	background-color: #282828;
 	outline-style: none;
   color: white;
 }

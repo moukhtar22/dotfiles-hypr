@@ -28,13 +28,15 @@ window#waybar>box {
   margin: 0px;
   margin-bottom: 0px;
   border-radius: 0px;
-  padding: 0px;
+  padding: 3px 6px;
   opacity: 1;
-  background: #131313;
+  background: #090909;
   border: none;
 }
 
 /* Modules styling */
+#custom-updates,
+#custom-menu,
 #workspaces,
 #clock,
 #custom-expand-icon,
@@ -44,12 +46,15 @@ window#waybar>box {
 #pulseaudio,
 #network,
 #battery,
-#custom-notification {
+#custom-notification,
+#custom-power {
   margin: 0px 1px;
-  padding: 6px 5px;
+  padding: 0px 6px;
   font-size: 14.5px;
   font-family: 'Liberation Sans', 'Adwaita Sans', 'Noto Sans', sans-serif;
   font-weight: 500;
+  border-radius: 4px;
+  border: none;
   background: transparent;
   opacity: 1;
   color: white;
@@ -62,6 +67,9 @@ window#waybar>box {
   padding: 0px 4px;
 }
 
+#custom-updates,
+#custom-menu,
+#custom-power,
 #custom-expand-icon,
 #idle_inhibitor,
 #pulseaudio,
@@ -71,23 +79,47 @@ window#waybar>box {
   font-family: 'Caskaydia Cove Nerd Font'
 }
 
+/* Tray modules */
+#custom-bluetooth,
+#tray { margin: 0px 7px }
+
 #custom-expand-icon {
+  background: transparent;
+  margin-right: 10px;
+}
+
+/* Fixes */
+#custom-expand-icon {
+  margin: 0;
+  padding: 0;
+  margin-right: 8px
+}
+
+#group-tray-expander {
   margin: 0;
   padding: 0;
 }
 
-/* Tray modules */
-#tray { margin: 0px 8px }
-
-#custom-bluetooth {
-  margin: 0px 6px;
-  margin-right: 16px
+#language {
+  margin-left: 4px
 }
 
-/* Fixes */
-#battery { margin-right: 6px }
-#custom-expand-icon { margin-right: 8px; padding-left: 4px; }
-#custom-notification { margin: 0; margin-right: 4px; padding: 0; padding-left: 3px; }
+#custom-menu {
+  padding-right: 9px;
+}
+
+#idle_inhibitor {
+  padding-left: 10px;
+  padding-right: 8px
+}
+
+#custom-power {
+  padding-right: 10px
+}
+
+#custom-notification {
+  padding-right: 2px;
+}
 
 /* Battery states */
 /* #battery.warning:not(.charging), */
@@ -96,9 +128,10 @@ window#waybar>box {
 /* #battery.charging                { color: #7db682 } */
 
 /* Hyprland/workspaces styling */
-#workspaces { padding: 0px 0px; }
-
-#workspaces button:first-child { margin-left: 4px }
+#workspaces {
+  padding: 0;
+  margin: 0;
+}
 
 #workspaces button {
   padding: 0px 0px;
@@ -120,5 +153,5 @@ window#waybar>box {
 
 tooltip {
   border-radius: 0px;
-  /* background: black; */
+  background: black;
 }

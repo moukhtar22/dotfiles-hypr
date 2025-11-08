@@ -4,9 +4,15 @@
 {
   "reload_style_on_change": true,
   "layer": "background",
+  // "width": 990,
   "spacing": 0,
   "modules-left": [
-    "hyprland/workspaces"
+    "custom/menu",
+    "custom/separator",
+    "hyprland/workspaces",
+    "custom/separator",
+    "hyprland/language",
+    "custom/updates"
   ],
   "modules-center": [
     "clock"
@@ -14,12 +20,13 @@
   "modules-right": [
     "group/tray-expander",
     "idle_inhibitor",
-    "hyprland/language",
     "custom/separator",
     "pulseaudio",
     "network",
     "battery",
-    "custom/notification"
+    "custom/separator",
+    "custom/notification",
+    "custom/power"
   ],
   // Modules configuration
   "hyprland/workspaces": {
@@ -84,13 +91,13 @@
   "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 600,
+      "transition-duration": 300,
       "children-class": "tray-group-item"
     },
     "modules": [
       "custom/expand-icon",
-      "tray",
-      "custom/bluetooth"
+      "custom/bluetooth",
+      "tray"
     ]
   },
   "custom/expand-icon": {
@@ -103,8 +110,8 @@
   },
   "clock": {
     "format": "{:%b %d  %I:%M %p}",
-    "on-click": "gnome-calendar",
-    "on-click-right": "gnome-clocks",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "gnome-calendar",
     "tooltip": false
   },
   "backlight": {
@@ -127,15 +134,15 @@
     "tooltip-format": "Battery: {capacity}%"
   },
   "custom/updates": {
-    "format": "  {}",
+    "format": "󰒙 {}",
     "return-type": "json",
     "format-icons": {
-        "has-updates": " ",
-        "updated": " "
+        "has-updates": "󱍷",
+        "updated": "󰂪"
     },
     "on-click": "alacritty --class float -e bash ~/.config/hypr/scripts/update_system.sh",
     "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300 --no-zero-output"
   },
   "network": {
     "format": "{icon}",
@@ -151,9 +158,9 @@
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} ",
-    "format-bluetooth": "{volume}%  {icon} ",
-    "format-bluetooth-muted": " {icon} ",
-    "format-muted": " 0%",
+    "format-bluetooth": "{icon} ",
+    "format-bluetooth-muted": " ",
+    "format-muted": "",
     "format-source": " {volume}%",
     "format-source-muted": " ",
     "format-icons": {
@@ -165,8 +172,10 @@
         "car": "",
         "default": ["", "", ""]
     },
-    "on-click": "pavucontrol",
-    "tooltip": false
+    "on-click": "pamixer --toggle-mute",
+    "on-click-right": "pavucontrol",
+    "tooltip-format": "{volume}%",
+    "tooltip": true
   },
   "custom/bluetooth": {
     "format": "",
@@ -185,5 +194,15 @@
   "memory": {
     "format": "  {}%",
     "on-click": "alacritty -e btop"
+  },
+  "custom/menu": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+  "custom/power": {
+    "format": "",
+    "on-click": "wlogout",
+    "tooltip": false
   }
 }

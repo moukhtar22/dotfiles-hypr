@@ -33,7 +33,7 @@ echo "🖼️  Wallpapers: $WALL1 (main), $WALL2 (others)"
 echo "📝 Neovim theme: $NVIM_THEME"
 
 # Waybar
-# bash "$SCRIPTS/waybar_theme.sh" "$THEME"
+#bash "$SCRIPTS/waybar_theme.sh" "$THEME"
 
 # Alacritty
 bash "$SCRIPTS/alacritty_theme.sh" "$THEME"
