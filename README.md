@@ -1,3 +1,6 @@
+# See how it looks
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/62e80d33-3591-47f0-b460-669d63fd5f04" />
+
 # List of available themes
 
 - [Gruvbox](#gruvbox)
@@ -93,7 +96,3 @@ git clone https://github.com/maximilionus/lucidglyph
 cd lucidglyph
 sudo ./lucidglyph.sh install
 ```
-
-# See how it looks
-
-<img width="1920" height="1080" alt="screenshot-2025-10-29-20:29:38" src="https://github.com/user-attachments/assets/6e120ed4-0a84-4736-b309-ecbce78da83e" />
