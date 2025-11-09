@@ -12,20 +12,25 @@
     "hyprland/workspaces",
     "custom/separator",
     "hyprland/language",
-    "custom/updates"
+    "idle_inhibitor",
+    "custom/updates",
+    "custom/separator",
+    "hyprland/window"
   ],
   "modules-center": [
-    "clock"
   ],
   "modules-right": [
     "group/tray-expander",
-    "idle_inhibitor",
     "custom/separator",
     "pulseaudio",
+    "backlight",
+    "custom/separator",
     "network",
     "battery",
     "custom/separator",
+    "clock",
     "custom/notification",
+    "custom/separator",
     "custom/power"
   ],
   // Modules configuration
@@ -34,17 +39,17 @@
       "format": "{icon}",
       "format-icons": {
         "default": "",
-        "1": "I",
-        "2": "II",
-        "3": "III",
-        "4": "IV",
-        "5": "V",
+        "1": "DEV",
+        "2": "WWW",
+        "3": "IMG",
+        "4": "DOC",
+        "5": "MSC",
         "6": "VI",
         "7": "VII",
         "8": "VIII",
         "9": "IX",
-        "10": "X",
-        "active": "O"
+        "10": "X"
+        // "active": "O"
      },
      "persistent-workspaces": {
            "*": 5
@@ -109,15 +114,16 @@
     "spacing": 13
   },
   "clock": {
-    "format": "{:%b %d  %I:%M %p}",
-    "on-click": "swaync-client -t -sw",
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%d/%m/%y}",
     "on-click-right": "gnome-calendar",
     "tooltip": false
   },
   "backlight": {
-    "format": "{icon}  {percent}%",
+    "format": "  {percent}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
-    "scroll-step": 10
+    "on-click": "alacritty --class float -e nvim ~/.config/hypr/settings/monitors.conf",
+    "scroll-step": 5
   },
   "battery": {
     "states": {
@@ -157,10 +163,10 @@
   },
   "pulseaudio": {
     "scroll-step": 5,
-    "format": "{icon} ",
-    "format-bluetooth": "{icon} ",
-    "format-bluetooth-muted": " ",
-    "format-muted": "",
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon}  {volume}%",
+    "format-bluetooth-muted": "{icon}  0%",
+    "format-muted": " 0%",
     "format-source": " {volume}%",
     "format-source-muted": " ",
     "format-icons": {
@@ -197,7 +203,7 @@
   },
   "custom/menu": {
     "format": "",
-    "on-click": "rofi -show drun",
+    "on-click": "alacritty --class float -e nvim ~/.config/hypr/settings/keybindings.conf",
     "tooltip": false
   },
   "custom/power": {
