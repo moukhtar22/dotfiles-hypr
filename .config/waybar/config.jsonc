@@ -148,7 +148,7 @@
     },
     "on-click": "alacritty --class float -e bash ~/.config/hypr/scripts/update_system.sh",
     "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300 --no-zero-output"
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
   },
   "network": {
     "format": "{icon}",
@@ -163,7 +163,7 @@
   },
   "pulseaudio": {
     "scroll-step": 5,
-    "format": "{icon} {volume}%",
+    "format": "{icon}  {volume}%",
     "format-bluetooth": "{icon}  {volume}%",
     "format-bluetooth-muted": "{icon}  0%",
     "format-muted": " 0%",
