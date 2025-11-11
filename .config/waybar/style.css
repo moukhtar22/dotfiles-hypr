@@ -150,10 +150,10 @@ window#waybar>box {
 }
 
 /* Battery states */
-/* #battery.warning:not(.charging), */
-/* #battery.critical:not(.charging) { color: #b67777 } */
-/* #battery.plugged:not(.charging)  { color: #b6a579 } */
-/* #battery.charging                { color: #7db682 } */
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) { color: #ff8080 }
+#battery.plugged:not(.charging)  { color: #ffb588 }
+#battery.charging                { color: #88ff88 }
 
 /* Hyprland/workspaces styling */
 #workspaces {
@@ -174,12 +174,12 @@ window#waybar>box {
   transition: color .08s ease, background .08s ease, opacity .08s ease;
 }
 
-#workspaces button.urgent              { color: #b67777 }
+#workspaces button.urgent              { color: #ff8080 }
 #workspaces button.empty               { opacity: .25    }
 #workspaces button.visible             { opacity: 1     }
 #workspaces button:hover:not(.visible) { opacity: .8    }
 
 tooltip {
-  border-radius: 0px;
+  border-radius: 6px;
   background: black;
 }
