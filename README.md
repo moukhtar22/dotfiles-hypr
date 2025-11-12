@@ -37,7 +37,7 @@
 - Panel: [Waybar](https://github.com/Alexays/Waybar)
 - Shell: [Fish](https://fishshell.com/)
 - Prompt: [Starship](https://starship.rs/)
-- Fonts: [IosevkaTerm Nerd](https://www.nerdfonts.com/font-downloads)
+- Fonts: [CaskaydiaCove Nerd](https://www.programmingfonts.org/#cascadia-code)
 - Terminal: [Alacritty](https://alacritty.org/)
 - Greeter: [SDDM](https://github.com/sddm/sddm)
 - Notification manager: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
@@ -61,7 +61,7 @@ sudo pacman -S xorg xorg-server libva libva-intel-driver intel-media-driver mesa
 
 AUR
 ```
-yay -S rofi-wayland waybar-module-pacman-updates-git ttf-adwaita-mono-nerd wlogout auto-cpufreq nitch onlyoffice-bin epson-inkjet-printer-escpr --noconfirm
+yay -S rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq nitch onlyoffice-bin epson-inkjet-printer-escpr --noconfirm
 ```
 
 Enable services
