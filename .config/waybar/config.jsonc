@@ -44,11 +44,11 @@
         "3": "IMG",
         "4": "DOC",
         "5": "MSC",
-        "6": "VI",
-        "7": "VII",
-        "8": "VIII",
-        "9": "IX",
-        "10": "X"
+        "6": "SYS",
+        "7": "FLS",
+        "8": "GFX",
+        "9": "TER",
+        "10": "MDA"
         // "active": "O"
      },
      "persistent-workspaces": {
@@ -64,8 +64,18 @@
       "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
   },
   "hyprland/window": {
-      "format": "{}",
-      "separate-outputs": true
+    "format": " {title}",
+    "max-length": 40,
+    "separate-outputs": false,
+    "rewrite": {
+      "(.*) ": " ",
+      "(.*)Mozilla Firefox": " Firefox",
+      "(.*) ~(.*)": "󰆍 Alacritty",
+      "(.*)Alacritty@ArchLinux": "󰆍 Alacritty",
+      "(.*) - Nvim": " Neovim",
+      "(.*)Discord": "󰙯 Discord"
+    },
+    "tooltip": false
   },
   "custom/notification": {
       "tooltip": false,

@@ -11,10 +11,10 @@ alias tkn "cat ~/Documents/Files/GitToken.txt"
 alias update "sudo pacman -Syu && yay -Syu"
 alias n nvim
 
-alias i "sudo pacman -S"
+alias i "sudo pacman -S --noconfirm"
 alias s "pacman -Ss"
 alias r "sudo pacman -Rns"
-alias yi "yay -S"
+alias yi "yay -S --noconfirm"
 alias ys "yay -Ss"
 alias yr "yay -Rns"
 
