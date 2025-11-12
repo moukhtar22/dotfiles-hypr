@@ -67,7 +67,7 @@ yay -S rofi-wayland waybar-module-pacman-updates-git ttf-adwaita-mono-nerd wlogo
 Enable services
 ```
 sudo systemctl enable sddm bluetooth cups auto-cpufreq thermald
-systemctl --user enable waybar hypridle hyprsunset pipewire wireplumber
+systemctl --user enable waybar hypridle hyprsunset pipewire batsinal wireplumber
 ```
 
 # Setup dotfiles
