@@ -23,14 +23,13 @@
 - [Solarized Light](https://github.com/maxmx03/solarized.nvim)
 - [Oasis Light (day)](https://github.com/uhs-robert/oasis.nvim)
 
+## Others
+- SDDM: [SDDM Astronaut Theme](https://github.com/Keyitdev/sddm-astronaut-theme)
+- Wallpapers: [My walls](https://github.com/dilanrojas/wallpapers.git)
+
 > [!NOTE]
 > Use SUPER + T for launching the theme selector.
 > Check ~/.config/hypr/themes/ for adding your own theme.
-
-# Themes
-
-- SDDM: [SDDM Astronaut Theme](https://github.com/Keyitdev/sddm-astronaut-theme)
-- Wallpapers: [My walls](https://github.com/dilanrojas/wallpapers.git)
 
 # Programs
 
