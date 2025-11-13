@@ -133,12 +133,13 @@
     "format": "  {percent}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
     "on-click": "alacritty --class float -e nvim ~/.config/hypr/settings/monitors.conf",
-    "scroll-step": 5
+    "scroll-step": 5,
+    "tooltip": false
   },
   "battery": {
     "states": {
-        "warning": 10,
-        "critical": 4
+        "warning": 15,
+        "critical": 8
     },
     "format": "{icon}",
     "format-charging": " {icon}",
@@ -163,9 +164,9 @@
   "network": {
     "format": "{icon}",
     "format-wifi": "{icon}",
-    "format-ethernet": "  {ipaddr}/{cidr}",
-    "tooltip-format": "  {ifname} via {gwaddr}",
-    "format-linked": "  {ifname} (No IP)",
+    "format-ethernet": " ",
+    "tooltip-format": " ",
+    "format-linked": " ",
     "format-disconnected": "󰤮 ",
     "tooltip": false,
     "on-click": "alacritty --class float -e nmtui",
@@ -191,7 +192,7 @@
     "on-click": "pamixer --toggle-mute",
     "on-click-right": "pavucontrol",
     "tooltip-format": "{volume}%",
-    "tooltip": true
+    "tooltip": false
   },
   "custom/bluetooth": {
     "format": "",

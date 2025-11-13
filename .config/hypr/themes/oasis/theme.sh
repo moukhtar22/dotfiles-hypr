@@ -1,2 +1,2 @@
 # Theme folder | Wallpapers (1st, Any other Monitor) | GTK theme | Nvim theme name
-bash $HOME/.config/hypr/scripts/theme_change.sh nordic 071.jpg 070.jpg dark nordic
+bash $HOME/.config/hypr/scripts/theme_change.sh oasis 076.jpg 076.jpg dark oasis
