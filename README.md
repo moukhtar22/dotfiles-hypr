@@ -15,11 +15,13 @@
 - [Nordic](https://github.com/AlexvZyl/nordic.nvim)
 - [Monokai](https://github.com/loctvl842/monokai-pro.nvim)
 - [Dracula](https://draculatheme.com/)
+- [Oasis](https://github.com/uhs-robert/oasis.nvim)
 - [Everforest Light](https://github.com/sainnhe/everforest)
 - [Kanagawa Light (Lotus)](https://github.com/rebelot/kanagawa.nvim)
 - [Rosé Pine Light (Dawn)](https://rosepinetheme.com/)
 - [Gruvbox Light](https://github.com/morhetz/gruvbox)
 - [Solarized Light](https://github.com/maxmx03/solarized.nvim)
+- [Oasis Light (day)](https://github.com/uhs-robert/oasis.nvim)
 
 > [!NOTE]
 > Use SUPER + T for launching the theme selector.
@@ -67,7 +69,7 @@ yay -S rofi-wayland waybar-module-pacman-updates-git wlogout auto-cpufreq nitch 
 Enable services
 ```
 sudo systemctl enable sddm bluetooth cups auto-cpufreq thermald
-systemctl --user enable waybar hypridle hyprsunset pipewire batsinal wireplumber
+systemctl --user enable waybar hypridle hyprsunset pipewire wireplumber
 ```
 
 # Setup dotfiles
@@ -75,10 +77,8 @@ systemctl --user enable waybar hypridle hyprsunset pipewire batsinal wireplumber
 Copy files to .config
 ```
 cp -r dotfiles/.config $HOME/
-cp dotfiles/.Xresources $HOME/
 git clone https://github.com/dilanrojas/wallpapers.git $HOME/Pictures/wallpapers
 sudo cp dotfiles/auto-cpufreq.conf /etc/
-sudo cp dotfiles/throttled.conf /etc/
 sudo usermod --shell /usr/bin/fish $USER
 sudo usermod --shell /usr/bin/fish root
 sudo updatedb
