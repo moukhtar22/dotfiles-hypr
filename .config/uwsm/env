@@ -1,0 +1,27 @@
+# ===================
+# === Environment ===
+# ===================
+export XCURSOR_SIZE=24
+export HYPRCURSOR_SIZE=24
+export XCURSOR_THEME=Adwaita
+export QT_QPA_PLATFORMTHEME=qt5ct
+export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+#-Dsun.java2d.uiScale=2.0
+
+# Force all apps to use Wayland
+export GDK_BACKEND=wayland,x11,*
+export QT_QPA_PLATFORM=wayland;xcb
+export SDL_VIDEODRIVER=wayland
+export MOZ_ENABLE_WAYLAND=1
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+export OZONE_PLATFORM=wayland
+export XDG_SESSION_TYPE=wayland
+
+# Allow better support for screen sharing (Google Meet, Discord, etc)
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_DESKTOP=Hyprland
+
+# Default terminal & apps
+export TERMINAL=Alacritty
+export EDITOR=nvim
+export VISUAL=nvim
