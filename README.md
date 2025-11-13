@@ -29,7 +29,8 @@
 
 > [!NOTE]
 > Use SUPER + T for launching the theme selector.
-> Check ~/.config/hypr/themes/ for adding your own theme.
+> Check ~/.config/hypr/themes/ for adding your own.
+> Go to [Previews](#previews) and take a look at the themes.
 
 # Programs
 
@@ -52,6 +53,9 @@
 - Video player: [Totem](https://apps.gnome.org/en/Totem/)
 - Text editor: [Gnome Text Editor](https://apps.gnome.org/TextEditor/)
 - IDE: [Neovim](https://neovim.io/) + [LazyVim](http://www.lazyvim.org/)
+
+> [!NOTE]
+> This configuration uses UWSM.
 
 # List of packages (Arch & Arch based distros)
 
@@ -96,3 +100,62 @@ git clone https://github.com/maximilionus/lucidglyph
 cd lucidglyph
 sudo ./lucidglyph.sh install
 ```
+
+# Previews
+
+## Gruvbox
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/15f2ed48-b2e9-4346-a666-92d41073b70c" />
+
+## Solarized Osaka
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4d8f89a2-42f7-43d1-b9d3-b91a30ea93b4" />
+
+## Rosé Pine
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5e24ae06-62cd-49bd-a123-50456d531d3c" />
+
+## Kanagawa Wave
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9077c1b1-f8bc-42fb-9f95-0fe1a45f759b" />
+
+## Vercel
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e503d47-901b-4c2d-b14f-f7ba3d3e216f" />
+
+## Doom one
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/373fafb2-8202-47f1-bb49-3fb05187c67f" />
+
+## Onedark
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/056b4da4-3121-484d-9afa-42d0edb90d21" />
+
+## Everforest
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2bf55f4c-aaa3-4150-bcd4-ce1286b9f539" />
+
+## Catppuccin Mocha
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/debfcd7a-e8b9-4361-84c7-8a01e6ca4abc" />
+
+## Nordic
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/49d1ca2c-db0d-40a7-ab21-74c7d01b5c4a" />
+
+## Monokai
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e6c4d13c-5537-4c8f-b141-43b3c3d89db8" />
+
+## Dracula
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27ebb71e-68c2-40fc-a032-995a6c989233" />
+
+## Oasis
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/410c65c5-20f8-41b5-8517-99c696326df2" />
+
+## Everforest Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1d16d2e2-adfa-41d1-b718-3789c538e53f" />
+
+## Kanagawa Light (Lotus)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/46201e8c-2fcd-46db-8add-03b2425b61a6" />
+
+## Rosé Pine Light (Dawn)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a67cc459-2366-4d00-95e9-3e30d2c28b2b" />
+
+## Gruvbox Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8956a099-68ec-4c99-9de9-578f54a40bd6" />
+
+## Solarized Light
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/357cfa69-9f1e-4059-9e6a-e1d2951ede43" />
+
+## Oasis Light (Day)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fb090609-3130-4782-9b91-bd8e7b50b48d" />
