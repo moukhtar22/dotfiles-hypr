@@ -1,6 +1,10 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   enabled = true,
+  config = function()
+    vim.opt_local.breakindent = false
+    vim.opt_local.wrap = true
+  end,
   opts = {
     bullet = {
       enabled = true,

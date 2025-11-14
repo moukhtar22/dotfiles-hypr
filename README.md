@@ -101,6 +101,24 @@ cd lucidglyph
 sudo ./lucidglyph.sh install
 ```
 
+# Some of the bindings
+
+## Programs
+
+  - SUPER + RETURN: Terminal (Alacritty)
+  - SUPER + B: Browser (Firefox)
+  - SUPER + M: Apps menu (Rofi)
+  - SUPER + E: File manager (Nautilus)
+  - SUPER + T: Theme switcher
+  - SUPER + N: Notes (NeoVim)
+
+## Windows
+
+  - SUPER + Q: Kills active window
+  - SUPER + H, J, K, L: Move focus around
+  - SUPER + SHIFT + H, J, K, L: Move windows around
+  - SUPER + CONTROL + H, J, K, L: Grow/shrink windows
+
 # Previews
 
 ## Gruvbox
