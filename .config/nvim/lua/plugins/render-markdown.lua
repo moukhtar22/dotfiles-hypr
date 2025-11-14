@@ -1,10 +1,6 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   enabled = true,
-  config = function()
-    vim.opt_local.breakindent = false
-    vim.opt_local.wrap = true
-  end,
   opts = {
     bullet = {
       enabled = true,
@@ -38,13 +34,12 @@ return {
     heading = {
       sign = false,
       icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
-      -- backgrounds = {
-      --   "none",
-      -- }
+      backgrounds = {
+        "none",
+      }
     },
     code = {
       enabled = true,
-      disable_background = { 'diff' }
     },
-  }
+  },
 }
