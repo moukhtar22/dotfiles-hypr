@@ -44,6 +44,7 @@ window#waybar>box {
 #window,
 #group-tray-expander,
 #custom-expand-icon,
+#custom-bluetooth,
 #pulseaudio,
 #backlight,
 #network,
@@ -153,7 +154,7 @@ window#waybar>box {
 /* Battery states */
 #battery.warning:not(.charging),
 #battery.critical:not(.charging) { color: #ff8080 }
-#battery.plugged:not(.charging)  { color: #ffe185 }
+#battery.plugged:not(.charging)  { color: #ffba6b }
 #battery.charging                { color: #88ff88 }
 
 /* Hyprland/workspaces styling */
