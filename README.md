@@ -85,6 +85,7 @@ sudo cp dotfiles/auto-cpufreq.conf /etc/
 sudo usermod --shell /usr/bin/fish $USER
 sudo usermod --shell /usr/bin/fish root
 sudo updatedb
+bash $HOME/.config/hypr/themes/nordic/theme.sh
 ```
 
 
